@@ -21,6 +21,15 @@
   padding: 2rem 0;
 }
 
+.resume__button {
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: tomato;
+  color: white;
+  font-weight: bolder;
+  padding: 1.5rem;
+}
+
 .profile__pic {
   width: 40%;
 }
