@@ -2,35 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luis Biancardi Portfolio || HOME</title>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- BOXICONS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+
+    <title>Luis Biancardi Personal Portfolio</title>
   </head>
   <body>
-    <header class="main__header">
-      <div class="container">
-        <img
-          src="assets/img/logo/Dark Theme Logo.svg"
-          alt="Biancardi Tech Logo"
-          class="logo__header"
-        />
-        <nav class="header__nav">
-          <a href="#" class="header__link">About me</a>
-          <a href="#" class="header__link">Personal Projects</a>
-          <a href="#" class="header__link">My Resume</a>
-        </nav>
-      </div>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Luis Biancardi</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">About</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-book-alt nav__icon"></i>
+                <span class="nav__name">Skills</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>
+                <span class="nav__name">Portfolio</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contactme" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+                <span class="nav__name">Contactme</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <img src="assets/img/profile.jpg" alt="" class="nav__img" />
+      </nav>
     </header>
+
+    <main>
+      <!--=============== HOME ===============-->
+      <section class="container section section__height" id="home">
+        <h2 class="section__title">Home</h2>
+        <div class="main__home container">
+          <div class="profile_description">
+            <h3 class="profile__header">Hey, I'am Luis</h3>
+            <h4 class="profile__profission">Frontend developer</h4>
+            <p class="profile__aboutme">
+              From Brazil living in California, looking for first oportunity
+              into the tech carrer as a Frontend developer.
+            </p>
+          </div>
+          <img
+            src="assets/img/LuisBiancardi.png"
+            alt="Profile Photo"
+            class="profile__pic"
+          />
+        </div>
+      </section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="container section section__height" id="about">
+        <h2 class="section__title">About</h2>
+      </section>
+
+      <!--=============== SKILLS ===============-->
+      <section class="container section section__height" id="skills">
+        <h2 class="section__title">Skills</h2>
+      </section>
+
+      <!--=============== PORTFOLIO ===============-->
+      <section class="container section section__height" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+      </section>
+
+      <!--=============== CONTACTME ===============-->
+      <section class="container section section__height" id="contactme">
+        <h2 class="section__title">Contactme</h2>
+      </section>
+    </main>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

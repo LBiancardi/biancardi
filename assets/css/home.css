@@ -1,0 +1,36 @@
+.main__home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.profile_description {
+  width: 50%;
+}
+
+.profile__header {
+  font-size: 3rem;
+}
+
+.profile__profission {
+  font-size: 1.2rem;
+  color: var(--title-color);
+}
+
+.profile__aboutme {
+  padding: 2rem 0;
+}
+
+.profile__pic {
+  width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__header {
+    font-size: 1.5rem;
+  }
+
+  .profile__profission {
+    font-size: 0.9rem;
+  }
+}
