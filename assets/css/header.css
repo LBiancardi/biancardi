@@ -1,0 +1,31 @@
+header {
+  background-color: #0b0c10;
+}
+
+.main__header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__header-nav {
+  display: flex;
+}
+
+.logo__header {
+  padding: 1rem;
+  width: 7rem;
+}
+
+.header__link {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #c5c6c7;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  background-color: #c5c6c7;
+  color: #0b0c10;
+}
