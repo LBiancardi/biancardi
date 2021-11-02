@@ -5,7 +5,7 @@
 }
 
 .profile_description {
-  width: 50%;
+  width: 60%;
 }
 
 .profile__header {
@@ -18,16 +18,17 @@
 }
 
 .profile__aboutme {
+  width: 90%;
   padding: 2rem 0;
 }
 
 .resume__button {
-  border: 1px solid white;
+  border: none;
   border-radius: 30px;
   background-color: tomato;
-  color: white;
+  color: var(--text-color);
   font-weight: bolder;
-  padding: 1.5rem;
+  padding: 1.2rem;
 }
 
 .profile__pic {
