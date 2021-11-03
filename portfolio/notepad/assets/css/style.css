@@ -3,9 +3,15 @@ body {
   background-color: #1f2833;
 }
 
+.main__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
 .main__menu {
   color: white;
-  padding-left: 5%;
   /* width: 100px; */
 }
 
@@ -16,6 +22,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.logo__header {
+  width: 5rem;
 }
 
 .container {
@@ -137,14 +147,27 @@ body {
 
 @media screen and (max-width: 768px) {
   .todo-list {
+    border-radius: 15px;
     padding: 10px;
   }
 
   .app {
-    align-items:flex-start;
-    margin-left: 4%;
-    padding-top: 3rem;
-    width: 90vw;
+    align-items: flex-start;
+    margin-left: 2.5%;
+    padding-top: 2rem;
+    width: 95vw;
+  }
+
+  .task {
+    border-radius: 10px;
+    margin: 0;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .form-input,
+  .form-button {
+    border-radius: 5px;
+    padding: 0.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
