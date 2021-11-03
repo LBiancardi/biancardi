@@ -10,7 +10,7 @@ const deletarTarefa = (atualiza, id) => {
 export const BotaoDeleta = (atualiza, id) => {
   const botaoDeleta = document.createElement("button");
 
-  botaoDeleta.innerText = "deletar";
+  botaoDeleta.innerText = "delete";
   botaoDeleta.addEventListener("click", () => deletarTarefa(atualiza, id));
 
   return botaoDeleta;
