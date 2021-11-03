@@ -31,6 +31,10 @@
   padding: 1.2rem;
 }
 
+.resume__button:hover {
+  background-color: lightcoral;
+}
+
 .profile__pic {
   width: 40%;
 }
