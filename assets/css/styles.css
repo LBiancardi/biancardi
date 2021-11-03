@@ -71,7 +71,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 1.5rem 0 1rem;
+  padding: 5.5rem 0 1rem;
 }
 
 .section__title {
@@ -82,13 +82,13 @@ img {
 }
 
 .section__height {
-  height: 85vh;
+  height: 90vh;
 }
 
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-right: 1rem;
 }
 
@@ -109,6 +109,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .nav__img {
@@ -136,6 +137,10 @@ img {
     border-radius: 1.25rem 1.25rem 0 0;
     transition: 0.4s;
   }
+
+  .section__height {
+    height: 95vh;
+  }
 }
 
 .nav__list,
@@ -153,6 +158,8 @@ img {
 
 .nav__list {
   justify-content: space-around;
+  padding-top: 1rem;
+  padding-left: 0;
 }
 
 .nav__name {
