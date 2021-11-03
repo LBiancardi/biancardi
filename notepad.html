@@ -18,22 +18,27 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
+  <!-- FONTS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BioRhyme&amp;family=Space+Mono&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Biancardi's | list</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="portfolio/notepad/assets/css/style.css">
 
-    <title>Luis Biancardi Personal Portfolio</title>
+    <title>Biancardi's | list</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Luis Biancardi</a>
+        <a href="index.html" class="nav__logo">Luis Biancardi</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
+              <a href="index.html" class="nav__link active-link">
                 <i class="bx bx-home-alt nav__icon"></i>
                 <span class="nav__name">Home</span>
               </a>
@@ -73,57 +78,25 @@
       </nav>
     </header>
 
-    <main>
-      <!--=============== HOME ===============-->
-      <section class="container section section__height" id="home">
-        <!-- <h2 class="section__title">Home</h2> -->
-        <div class="main__home container">
-          <div class="profile_description">
-            <h3 class="profile__header">Hey, I'am Luis</h3>
-            <h4 class="profile__profission">Frontend developer</h4>
-            <p class="profile__aboutme">
-              From Brazil living in California, looking for first oportunity
-              into the tech carrer as a Frontend developer.
-            </p>
-            <a
-              class="resume__button"
-              href="assets/pdf/LuisBiancardi__resume.pdf"
-              title=""
-              download
-              >Download CV
-            </a>
-          </div>
-          <img
-            src="assets/img/LuisBiancardi.png"
-            alt="Profile Photo"
-            class="profile__pic"
-          />
-        </div>
-      </section>
-
-      <!--=============== ABOUT ===============-->
-      <section class="container section section__height" id="about">
-        <h2 class="section__title">About</h2>
-      </section>
-
-      <!--=============== SKILLS ===============-->
-      <section class="container section section__height" id="skills">
-        <h2 class="section__title">Skills</h2>
-      </section>
-
-      <!--=============== PORTFOLIO ===============-->
-      <section class="container section section__height" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <a href="portfolio/dashboard/index.html">dashboard</a>
-        <a href="notepad.html">Notepad</a>
-      </section>
-
-      <!--=============== CONTACTME ===============-->
-      <section class="container section section__height" id="contactme">
-        <h2 class="section__title">Contactme</h2>
-      </section>
-    </main>
-
+    <div class="app">
+      <div class="todo-list">
+        <h1 class="title">
+          Biancardi's TO-DO list
+        </h1>
+    
+        <form class="form" action="">
+          <input class="form-input" type="text" data-form-input>
+          <input type="datetime-local" placeholder="preencha 2021-01-15" data-form-date>
+          <button class="form-button" data-form-button> Novo Item </button>
+        </form>
+  
+        <ul class="list" data-list>   
+  
+        </ul>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <script type="module" src="portfolio/notepad/main.js"></script>
+  
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <!-- BUNDLE BOOTSTRAP JS -->
