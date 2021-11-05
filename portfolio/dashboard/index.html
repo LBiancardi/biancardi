@@ -22,64 +22,130 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navigation.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div class="container">
-      <div class="navigation">
-        <ul class="navigation__bar">
-          <li class="navigation__brand">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fab fa-apple"></i></span>
-              <span class="title"><h2>Dimension Dev</h2></span>
-            </a>
-          </li>
+    <nav>
+      <div class="container">
+        <div class="navigation">
+          <ul class="navigation__bar">
+            <li class="navigation__brand">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fab fa-apple"></i></span>
+                <span class="title"><h2>Dimension Dev</h2></span>
+              </a>
+            </li>
 
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fas fa-home"></i></span>
-              <span class="title">Dashboard</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fas fa-users"></i></span>
-              <span class="title">Customers</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">
-              <span class="icon"><i class="fas fa-comment-dots"></i></span>
-              <span class="title">Message</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fas fa-question-circle"></i></span>
-              <span class="title">Help</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fas fa-users-cog"></i></span>
-              <span class="title">Settings</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fas fa-lock"></i></span>
-              <span class="title">Password</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-              <span class="title">Sign Out</span>
-            </a>
-          </li>
-        </ul>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fas fa-users"></i></span>
+                <span class="title">Customers</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">
+                <span class="icon"><i class="fas fa-comment-dots"></i></span>
+                <span class="title">Message</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span class="title">Help</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fas fa-users-cog"></i></span>
+                <span class="title">Settings</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <span class="title">Password</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span class="title">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    
+    <main>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu()"></div>
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search here" />
+              <i class="fas fa-search"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img
+              class="user__image"
+              src="assets/img/profile.jpg"
+              alt="Profile image"
+            />
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,042</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-eye"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">208</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">$6,042</div>
+            <div class="cardName">Earnings</div>
+          </div>
+          <div class="iconBox">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
