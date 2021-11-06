@@ -70,3 +70,29 @@
   line-height: 60px;
   white-space: nowrap;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+  .navigation {
+    left: -300px;
+  }
+
+  .navigation.active {
+    left: 0;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+}

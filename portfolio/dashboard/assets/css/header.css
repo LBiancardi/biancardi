@@ -86,3 +86,18 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+  .toggle.active {
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    left: initial;
+  }
+
+  .toggle.active::before {
+    color: var(--my-white);
+  }
+}
