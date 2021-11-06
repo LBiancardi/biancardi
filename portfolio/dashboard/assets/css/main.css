@@ -81,8 +81,58 @@
   border-bottom: 1px solid var(--light-gray);
 }
 
-.details .recentOrders table tr:hover {
+.details .recentOrders table tr:last-child {
+  border-bottom: none;
+}
+
+.details .recentOrders table tbody tr:hover {
   background: var(--hover-light-blue);
   color: var(--smk-white);
 }
 
+.details .recentOrders table tr td {
+  padding: 9px 5px;
+}
+
+.details .recentOrders table tbody tr td:last-child,
+.details .recentOrders table thead tr td:last-child {
+  text-align: right;
+}
+
+.details .recentOrders table tbody tr td:nth-child(2),
+.details .recentOrders table thead tr td:nth-child(2) {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.details .recentOrders table tbody tr td:nth-child(3),
+.details .recentOrders table thead tr td:nth-child(3) {
+  text-align: center;
+}
+
+.status {
+  position: relative;
+  padding: 2px 4px;
+  background: var(--status-return);
+  color: var(--my-white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.delivered {
+  background: var(--status-delivered);
+}
+
+.pending {
+  background: var(--status-pending);
+}
+
+.return {
+  background: var(--status-return);
+}
+
+.inprogress {
+  background: var(--hover-light-blue);
+}

@@ -6,9 +6,12 @@
   --hover-light-blue: #03a9f4;
   --my-white: #fefefe;
   --smk-white: #fff;
-  --my-black: #111;
   --gray: #999;
-  --light-gray: rgba(0,0,0, 0.1);
+  --light-gray: rgba(0, 0, 0, 0.1);
+  --my-black: #111;
+  --status-delivered: #8de02c;
+  --status-pending: #f9ca3f;
+  --status-return: #f00;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
