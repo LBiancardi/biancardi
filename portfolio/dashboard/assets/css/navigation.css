@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.navigation.dark {
+  background-color: var(--background-dark-theme);
+}
+
 .navigation.active {
   width: 60px;
 }
@@ -31,6 +35,10 @@
   cursor: pointer;
 }
 
+.navigation__item.dark:hover {
+  background: var(--hover-dark-theme);
+}
+
 .navigation__brand {
   margin-bottom: 20px;
 }
@@ -46,6 +54,10 @@
   display: flex;
   text-decoration: none;
   color: var(--my-white);
+}
+
+.navigation__item.dark a:hover {
+  color: var(--background-dark-theme);
 }
 
 .navigation__link .icon {

@@ -29,12 +29,19 @@
   <body>
     <nav>
       <div class="container">
-        <div class="navigation">
+        <div class="navigation" id="navigation">
           <ul class="navigation__bar">
             <li class="navigation__brand">
               <a class="navigation__link" href="#">
                 <span class="icon"><i class="fab fa-apple"></i></span>
                 <span class="title"><h2>Dimension Dev</h2></span>
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#" onclick="darkMode()">
+                <span class="icon"><i class="fas fa-moon"></i></span>
+                <span class="title" id="theme">Light Theme</span>
               </a>
             </li>
 
