@@ -132,7 +132,9 @@
   color: var(--smk-white);
 }
 
-.details.dark .recentOrders table tbody tr:hover {
+.details.dark .recentOrders table tbody tr:hover,
+.details.dark .recentCustomers table tr:hover,
+.details.dark .recentCustomers table tr:hover td h4 span {
   background: var(--hover-dark-theme);
   color: var(--background-dark-theme);
 }

@@ -35,10 +35,6 @@
   cursor: pointer;
 }
 
-.navigation__item.dark:hover {
-  background: var(--hover-dark-theme);
-}
-
 .navigation__brand {
   margin-bottom: 20px;
 }
@@ -56,7 +52,8 @@
   color: var(--my-white);
 }
 
-.navigation__item.dark a:hover {
+.navigation.dark .navigation__item a:hover {
+  background: var(--hover-dark-theme);
   color: var(--background-dark-theme);
 }
 
