@@ -1,3 +1,7 @@
+.main.dark {
+  background-color: var(--gray-dark-theme);
+}
+
 .cardBox {
   position: relative;
   width: 100%;
@@ -16,6 +20,15 @@
   cursor: pointer;
 }
 
+.card.dark {
+  background: var(--background-dark-theme);
+  color: var(--text-dark-theme);
+}
+
+.cardBox .card.dark .cardName {
+  color: var(--gray);
+}
+
 .cardBox .card .numbers {
   position: relative;
   font-size: 2em;
@@ -31,6 +44,10 @@
   color: var(--hover-light-blue);
 }
 
+.cardBox .card.dark .iconBox {
+  color: var(--hover-dark-theme);
+}
+
 .details {
   position: relative;
   width: 100%;
@@ -39,6 +56,30 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
+}
+
+.details.dark div {
+  background: var(--background-dark-theme);
+  color: var(--text-dark-theme);
+}
+
+.details.dark .btn {
+  background: var(--green-dark-theme);
+  transition: 0.5s;
+}
+
+.details.dark .btn:hover {
+  background: var(--hover-dark-theme);
+  color: var(--gray-dark-theme);
+  font-weight: 600;
+}
+
+.details.dark .status {
+  color: var(--background-dark-theme);
+  font-weight: 600;
+}
+.details.dark .status.return {
+  background-color: var(--status-return-dark);
 }
 
 .details .recentOrders {
@@ -89,6 +130,11 @@
 .details .recentOrders table tbody tr:hover {
   background: var(--hover-light-blue);
   color: var(--smk-white);
+}
+
+.details.dark .recentOrders table tbody tr:hover {
+  background: var(--hover-dark-theme);
+  color: var(--background-dark-theme);
 }
 
 .details .recentOrders table tr td {

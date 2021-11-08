@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.topbar.dark {
+  background-color: var(--my-black);
+}
+
 .toggle {
   position: relative;
   width: 60px;
@@ -39,6 +43,10 @@
   font-size: 24px;
   text-align: center;
   color: var(--my-black);
+}
+
+.toggle.dark::before {
+  color: var(--text-dark-theme);
 }
 
 .search {

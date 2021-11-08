@@ -16,8 +16,12 @@
   --status-return: #f00;
 
   /*========== Dark Mode ==========*/
+  --gray-dark-theme: #191a19;
   --background-dark-theme: #2b2b2b;
+  --green-dark-theme: #1e5128;
   --hover-dark-theme: #6cffa7;
+  --text-dark-theme: #d8e9a8;
+  --status-return-dark: rgb(235, 62, 32);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;

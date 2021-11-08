@@ -10,8 +10,16 @@ function toggleMenu() {
 
 function darkMode() {
   const navigation = document.querySelector(".navigation");
+  const topbar = document.querySelector(".topbar");
+  const toggle = document.querySelector(".toggle");
+  const main = document.querySelector(".main");
+  const details = document.querySelector(".details");
 
   navigation.classList.toggle("dark");
+  topbar.classList.toggle("dark");
+  toggle.classList.toggle("dark");
+  main.classList.toggle("dark");
+  details.classList.toggle("dark");
   changeNavItemColor();
   changeText();
 }
@@ -28,8 +36,10 @@ function changeText() {
 
 function changeNavItemColor() {
   const navigation__item = document.querySelectorAll(".navigation__item");
+  const card = document.querySelectorAll(".card");
 
   for (i = 0; i < navigation__item.length; i++) {
     navigation__item[i].classList.toggle("dark");
+    card[i].classList.toggle("dark");
   }
 }
