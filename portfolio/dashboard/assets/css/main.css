@@ -20,12 +20,12 @@
   cursor: pointer;
 }
 
-.card.dark {
+.cardBox.dark .card {
   background: var(--background-dark-theme);
   color: var(--text-dark-theme);
 }
 
-.cardBox .card.dark .cardName {
+.cardBox.dark .card .cardName {
   color: var(--gray);
 }
 
@@ -44,7 +44,7 @@
   color: var(--hover-light-blue);
 }
 
-.cardBox .card.dark .iconBox {
+.cardBox.dark .card .iconBox {
   color: var(--hover-dark-theme);
 }
 
