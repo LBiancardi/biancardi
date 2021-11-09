@@ -50,7 +50,7 @@ body {
 }
 
 .box h4 {
-  color: var(--background-dark-theme);
+  color: var(--gray);
   text-transform: capitalize;
   font-weight: 400;
 }
