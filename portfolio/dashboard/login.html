@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- method="POST" -->
-    <form class="box" >
+    <form class="box">
       <h1>Login</h1>
       <h4>Dimension Dev</h4>
       <input
@@ -29,9 +29,20 @@
         id="password"
         required
       />
-      <input type="submit" name="" value="Login" onclick="validate()" />
-      <p id="sorry__msg" class="login__fail" style="display: none;">Sorry, login failed.</p>
-      <p id="hint__msg" class="login__fail" style="display: none;">login: admin | password: 123</p>
+      <input class="btn--submit" type="submit" name="" value="Login" onclick="validate()" />
+      <p id="sorry__msg" class="login__fail" style="display: none">
+        Login or password incorrect
+      </p>
+      <input
+        id="forgot__password"
+        type="submit"
+        name=""
+        value="Click here for login and password"
+        onclick="show_hint()"
+      />
+      <p id="hint__msg" class="login__fail" style="display: none">
+        login: admin | password: 123
+      </p>
     </form>
 
     <script src="main.js"></script>

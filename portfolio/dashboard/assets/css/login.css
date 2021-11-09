@@ -73,7 +73,7 @@ body {
 
 .box input[type="text"]:focus,
 .box input[type="password"]:focus {
-  width: 280px;
+  width: 230px;
   border-color: var(--hover-dark-theme);
 }
 
@@ -92,7 +92,7 @@ body {
   cursor: pointer;
 }
 
-.box input[type="submit"]:hover {
+.box .btn--submit:hover {
   background: var(--hover-dark-theme);
   color: var(--my-black);
   font-size: 1.05em;
@@ -105,6 +105,16 @@ body {
   font-weight: 300;
 }
 
+#forgot__password {
+  border: none;
+  transition: 0.5s;
+}
+
+.box #forgot__password:hover {
+  color: var(--gray);
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .box {
     width: 90vw;
@@ -113,6 +123,6 @@ body {
 
   .box input[type="text"]:focus,
   .box input[type="password"]:focus {
-    width: 70vw;
+    width: 65vw;
   }
 }

@@ -53,6 +53,9 @@ function validate() {
     form.action = "index.html";
   } else {
     document.querySelector("#sorry__msg").style.display = "block";
-    document.querySelector("#hint__msg").style.display = "block";
   }
+}
+
+function show_hint() {
+  document.querySelector("#hint__msg").style.display = "block";
 }
