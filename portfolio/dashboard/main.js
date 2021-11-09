@@ -43,3 +43,16 @@ function changeNavItemColor() {
     card[i].classList.toggle("dark");
   }
 }
+
+function validate() {
+  const username = document.querySelector("#username").value;
+  const password = document.querySelector("#password").value;
+  const form = document.querySelector(".box");
+
+  if (username == "admin" && password == 123) {
+    form.action = "index.html";
+  } else {
+    document.querySelector("#sorry__msg").style.display = "block";
+    document.querySelector("#hint__msg").style.display = "block";
+  }
+}

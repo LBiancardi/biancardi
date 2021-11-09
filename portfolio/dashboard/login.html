@@ -12,12 +12,28 @@
   </head>
   <body>
     <!-- method="POST" -->
-    <form class="box" action="index.html">
+    <form class="box" >
       <h1>Login</h1>
       <h4>Dimension Dev</h4>
-      <input type="text" name="" placeholder="Username" />
-      <input type="password" name="" placeholder="Password" />
-      <input type="submit" name="" value="Login" />
+      <input
+        type="text"
+        name=""
+        placeholder="Username"
+        id="username"
+        required
+      />
+      <input
+        type="password"
+        name=""
+        placeholder="Password"
+        id="password"
+        required
+      />
+      <input type="submit" name="" value="Login" onclick="validate()" />
+      <p id="sorry__msg" class="login__fail" style="display: none;">Sorry, login failed.</p>
+      <p id="hint__msg" class="login__fail" style="display: none;">login: admin | password: 123</p>
     </form>
+
+    <script src="main.js"></script>
   </body>
 </html>
