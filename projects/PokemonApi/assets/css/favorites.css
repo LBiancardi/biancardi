@@ -1,0 +1,63 @@
+header {
+  margin-bottom: 10px;
+}
+
+.headerBtn {
+  background-color: salmon;
+  border-radius: 30px;
+  font-weight: 900;
+  font-size: large;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.headerBtn a {
+  color: black;
+}
+
+.headerBtn:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.pokemonsList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 3px solid red;
+}
+
+.pokemon {
+  border: 2px solid black;
+  text-align: center;
+  padding: 1em;
+  margin: 2px 1px;
+  width: 29%;
+}
+
+.pokemon p {
+  padding: 5px;
+}
+
+#moreInfoBtn,
+#removeBtn {
+  border: 2px black solid;
+  border-radius: 7px;
+  font-size: medium;
+  font-weight: bold;
+  margin: 10px;
+  padding: 8px;
+  transition: 0.5s;
+}
+
+#removeBtn {
+  background-color: tomato;
+  color: black;
+}
+
+#moreInfoBtn:hover,
+#removeBtn:hover {
+  cursor: pointer;
+  border-radius: 0;
+  opacity: 75%;
+}

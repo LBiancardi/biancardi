@@ -1,0 +1,40 @@
+{
+  "myFavorites": [
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      "name": "CHARIZARD",
+      "id": "6",
+      "type": "fire flying"
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      "name": "BLASTOISE",
+      "id": "9",
+      "type": "water"
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "name": "SQUIRTLE",
+      "id": "7",
+      "type": "water"
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+      "name": "PIKACHU",
+      "id": "25",
+      "type": "electric"
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+      "name": "CELEBI",
+      "id": 251,
+      "type": "psychic grass "
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+      "name": "ARCANINE",
+      "id": 59,
+      "type": "fire "
+    }
+  ]
+}

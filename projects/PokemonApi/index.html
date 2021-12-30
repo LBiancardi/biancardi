@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="mainHeader" id="header">Consuming Pokemon API</h1>
+      <div class="pokedexForm" id="pokedexSearchByName">
+        <h3 class="title">Search by Name</h3>
+        <label for="pokeName">Pokemon name: </label><br />
+        <input
+          type="text"
+          id="pokeName"
+          name="pokeName"
+          placeholder="Charizard"
+        /><br />
+        <button type="submit" id="submitBtnName">Search by name</button>
+      </div>
+      <br /><br /><br />
+      <div class="pokedexForm" id="pokedexSearchByID">
+        <h3 class="title">Search by ID</h3>
+        <label for="pokeID">Pokemon ID:</label><br />
+        <input
+          type="number"
+          id="pokemonID"
+          name="pokemonID"
+          placeholder="100"
+        /><br />
+        <button type="submit" id="submitBtnId">Search by ID</button>
+        <button type="submit" id="submitRandom">Find random pokemon</button>
+      </div>
+      <button id="addFavorite" type="submit">Add to my favorites</button>
+      <a href="favorites.html"
+        ><button id="displayFavorites">Show my favorites</button>
+      </a>
+    </main>
+
+    <script type="module" src="js/pokemonApi.js"></script>
+  </body>
+</html>
