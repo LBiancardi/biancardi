@@ -1,0 +1,384 @@
+/* MAIN CSS */
+
+body {
+  color:white!important;
+  background-color: #051D3B!important;
+  font-family: 'Inter', sans-serif!important;
+  font-weight: 400!important;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+nav h4 {
+  /* //styleName: Sidebar title; */
+  font-family: 'Inter', sans-serif!important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-align: left;
+}
+
+label {
+  /* //styleName: Sidebar title; */
+  font-family: 'Inter', sans-serif!important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: white!important;
+}
+
+.left_nav span {
+  margin-left: 5px;
+}
+
+.responsive_menu {
+  display: none;
+}
+
+.main_header {
+  position: relative;
+  margin: 30px 15px 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main_body {
+  margin: 30px 15px 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* HEADER */
+
+.alura_logo img {
+  width: 90%;
+}
+
+#searchBar {
+  position: relative;
+  margin-right: 65px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFF;
+  border: solid 0px #96B9FD;
+  border-radius: 8px;
+  padding: 12px 6px;
+  width: 60%;
+  height: 56px;
+}
+
+#searchBar:hover {
+  background: #FFFFFF3D;
+}
+
+#searchBar:focus {
+  background:rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.user_image {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.user_image:hover {
+  width: 135px;
+  border-radius: 8px;
+  padding: 7px 3px;
+  background: #FFFFFF14;
+}
+
+.user_image a:hover {
+  text-decoration: none;
+}
+
+.user_image img {
+  border-radius: 30px;
+  width: 30%;
+}
+
+.divider {
+  display: block;
+}
+
+/* LEFT NAV BAR */
+
+.left_nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-left: 2.5%; */
+}
+
+.left_nav img {
+  width: 25%;
+  /* margin-bottom: 15px; */
+}
+
+.firstIcon:hover {
+  background-color: rgba(255,255,255,0.3);
+  padding: 2px 2px;
+  border-radius: 5px;
+}
+
+.secondIcon:hover {
+  background-color: rgba(255,255,255,0.3);
+  padding: 2px 2px;
+  border-radius: 5px;
+}
+
+/* Code input */
+
+.middle {
+  width: 60%;
+  /* margin-left: 7%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main_body #codeBox {
+  position: relative;
+  margin-top: 8px;
+  width: auto;
+  margin-left: 1%;
+  min-height: 350px;
+  height: auto;
+  background-color: black;
+  color: white;
+  border: 20px solid #55ed7e;
+  border-radius: 8px;
+  padding: 8% 3%;
+  resize: none;
+}
+
+#codeBox {
+  background-image: url("C:\\Users\\luisf\\Desktop\\Coding\\Front End Challenge (Oficial)\\mac_buttons.svg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: 4% 4%;
+  /* position: relative;
+  margin-top: 8px;
+  width: 95%;
+  height: 366px;
+  background-color: black;
+  color: white;
+  border: 20px solid #55ed7e;
+  border-radius: 8px;
+  padding: 7% 3%;
+  resize: none; */
+}
+
+#codeBox:hover {
+  background-color: rgba(20, 20, 20, 1);
+}
+
+#codeBox:focus {
+  background-color: rgba(20, 20, 20, 1);
+}
+
+#highlightButton {
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  margin-right: auto;
+  border-color: rgba(255, 255, 255 , 0);
+  margin-top: 8px;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(80, 129, 251, 0.08);
+  border-radius: 5px;
+}
+
+#highlightButton:hover {
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.3em;
+}
+
+.copyAndPaste {
+  margin-top: 5px;
+  /* background-color: #55ed7e; */
+
+}
+
+.copyAndPaste button {
+  border-color: transparent;
+  text-align: center;
+  background-color: orangered;
+  color: #051D3B;
+  font-weight: bolder;
+  border-radius: 8px;
+}
+
+/* Right nav bar */
+
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project_name textarea {
+  margin-right: 20px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.16);
+  border: solid 0px #96B9FD;
+  padding: 12px 6px;
+  border-radius: 5px;
+  color: #FFF;
+  resize: none;
+  width: 90%;
+}
+
+#righSideInputs:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#righSideInputs2 {
+  height: 150px;
+  padding: 25px 6px;
+}
+
+#righSideInputs2:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.personalization h4 {
+  margin-top: 30px;
+}
+
+.personalizeLanguage {
+  font-weight: bold;
+  margin-right: 20px;
+  width: 200px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFF;
+  border: solid 0px #96B9FD;
+  border-radius: 5px;
+  padding: 12px 6px;
+  top: 24px;
+}
+
+.personalizeLanguage:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.personalizeLanguage:focus {
+  background: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+#color {
+  margin-right: 20px;
+  border-color: rgba(255, 255, 255 , 0.80);
+  box-sizing: border-box;
+  width: 200px;
+  height: 35px;
+  margin-top: 8px;
+  background: rgba(255, 255, 255 , 0);
+  border-radius: 5px;
+}
+
+#color:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#hex {
+  display: none;
+}
+
+#saveButton {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  border-color: rgba(255, 255, 255 , 0);
+  margin-top: 8px;
+  color: #051D3B;
+  width: 200px;
+  height: 50px;
+  background-color: #5081FB;
+  border-radius: 5px;
+}
+
+#saveButton:hover {
+  font-size: 1.25em;
+  background-color: rgba(255, 255,255 , 1);
+}
+
+/* FOOTER */
+
+.footer {
+  /* width: 100%; */
+  /* bottom: 100%; */
+  margin-top: 50px;
+  border-top: 7px solid #96B9FD;
+  background-color: #5081FB;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .container{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sponsors {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.footerSearchBar {
+  width: 25%;
+}
+
+#footerSearchBar {
+  margin-left: 40%;
+  margin-bottom: 2%;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.50);
+  color: #FFF;
+  border: solid 0px #96B9FD;
+  border-radius: 8px;
+  padding: 12px 6px;
+}
+
+.codigo-wrapper {
+    height: 100%;
+    border-color: #55ed7e;
+    margin-bottom: 32px;
+}
+
+.preview {
+    display: block;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    height: 100%;
+}
+
+* {
+    margin: 0;
+}

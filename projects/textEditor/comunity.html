@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>All DEV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dracula.css">
+    <link rel="stylesheet" href="css/index_master.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/comunity_master.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header class="main_header">
+      <div class="responsive_menu">
+        <div class="search_icon_mobile">
+          <i class="fas fa-search"></i><a href="#"></a>
+        </div>
+        <div class="dropdown" aria-labelledby="dropdownMenu3">
+        <button onclick="myFunction()" class="dropbtn"><i id="hamburguer_menu" class="fas fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html"><img src="img/icon0.png" alt="">Code editor</a>
+          <a href="comunity.html"><img src="img/icon20.png" alt="">Comunity</a>
+          <!-- <li role="separator" class="divider"></li> -->
+          <br><br>
+          <a href="https://www.linkedin.com/in/luis-biancardi/"><img id="user_image_mobile" src="img/user_face.jpg" alt=""> Luis </a>
+        </div>
+        </div>
+      </div>
+
+
+      <a class="alura_logo" href="index.html"><img src="img/Logo.svg" alt=""></a>
+      <input class="search_bar" id="searchBar" type="text" placeholder="Search" name="" value="">
+      <div class="user_image">
+        <a href="https://www.linkedin.com/in/luis-biancardi/"><img src="img/user_face.jpg" alt="user image">
+        Luis</a>
+      </div>
+    </header>
+
+    <main>
+      <nav class="main_body2">
+      <div class="left_nav">
+        <div class="menu">
+          <h4>menu</h4>
+        </div>
+        <div class="firstIcon">
+        <a href="index.html"><img src="img/icon0.png" alt=""><span>Code editor</span></a>
+        </div>
+        <br>
+        <div class="secondIcon">
+          <a href="comunity.html"> <img src="img/icon20.png" alt=""><span>Comunity</span></a>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="code-organizer">
+        <code class="viewComunityCode" id="code1">
+
+          const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br><br>
+            
+          const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br><br>
+          
+          const unfold = (f, seed) => { <br>
+            const go = (f, seed, acc) => { <br>
+              const res = f(seed) <br>
+              return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
+            } <br>
+            return go(f, seed, []) <br>
+          } <br>
+          
+          
+        </code>
+        <h3>Titulo do projeto</h3>
+        <span>Descricao do projeto</span>
+        <div class="likes-comments" id="display-details">
+          <i class="fas fa-thumbs-up" id="like-button"><span id="counts-likes"></span></i>
+          <i class="fas fa-comment" id="comment-button"><span>5</span></i>
+          <span id="user-name"></span><img class="user-image" src="img/user_face.jpg" alt="">Luis</span>
+        </div>
+        </div>
+        <div class="code-organizer">
+          <code class="viewComunityCode" id="code2">
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br><br>
+            
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br><br>
+            
+            const unfold = (f, seed) => { <br>
+              const go = (f, seed, acc) => { <br>
+                const res = f(seed) <br>
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
+              } <br>
+              return go(f, seed, []) <br>
+            } <br>
+          </code>
+          <h3>Titulo do projeto</h3>
+          <span>Descricao do projeto</span>
+          <div class="likes-comments" id="display-details">
+            <i class="fas fa-thumbs-up" id="like-button"></i>
+            <i class="fas fa-comment" id="comment-button"><span>5</span></i>
+            <span id="user-name"><img class="user-image" src="img/user_face.jpg" alt="">Luis</span>
+          </div>
+          </div> 
+          <div class="code-organizer">
+            <code class="viewComunityCode" id="code3">
+              const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br><br>
+            
+              const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br><br>
+              
+              const unfold = (f, seed) => { <br>
+                const go = (f, seed, acc) => { <br>
+                  const res = f(seed) <br>
+                  return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
+                } <br>
+                return go(f, seed, []) <br>
+              } <br>
+            </code>
+            <h3>Titulo do projeto</h3>
+            <span>Descricao do projeto</span>
+            <div class="likes-comments" id="display-details">
+              <i class="fas fa-thumbs-up" id="like-button"></i>
+              <i class="fas fa-comment" id="comment-button"><span>5</span></i>
+              <span id="user-name"><img class="user-image" src="img/user_face.jpg" alt="">Luis</span>
+            </div>
+            </div> 
+            <div class="code-organizer">
+              <code class="viewComunityCode" id="code4">
+                const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) <br><br>
+            
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) <br><br>
+                
+                const unfold = (f, seed) => { <br>
+                  const go = (f, seed, acc) => { <br>
+                    const res = f(seed) <br>
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>
+                  } <br>
+                  return go(f, seed, []) <br>
+                } <br>
+              </code>
+              <h3>Titulo do projeto</h3>
+                      <span>Descricao do projeto</span>
+        <div class="likes-comments" id="display-details">
+          <i class="fas fa-thumbs-up" id="like-button"></i>
+          <i class="fas fa-comment" id="comment-button"><span>5</span></i>
+          
+          <span id="user-name"><img class="user-image" src="img/user_face.jpg" alt="">Luis</span>
+        </div>
+              </div> 
+      </div>
+    </nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+          <div class="sponsors">
+              <img src="https://www.alura.com.br/assets/img/home/alura-logo.1616501197.svg" alt="Alura">
+              <img src="https://www.alura.com.br/assets/img/home/alura-logo.1616501197.svg" alt="Alura">
+              <img src="https://www.alura.com.br/assets/img/home/alura-logo.1616501197.svg" alt="Alura">
+              <img src="https://www.alura.com.br/assets/img/home/alura-logo.1616501197.svg" alt="Alura">
+          </div>
+          <div class="footerSearchBar">
+            <input id="footerSearchBar" type="text" placeholder="Search">
+          </div>
+      </div>
+    </footer>
+
+      <script src="js/likeButton.js"></script>
+      <script src="js/dropdown.js"></script>
+      <!-- <script src="js/index_master.js"></script> -->
+      <!-- <script src="js/highlight.pack.js"></script> -->
+      <!-- <script src="js/index.js"></script> -->
+  </body>
+
+</html>
