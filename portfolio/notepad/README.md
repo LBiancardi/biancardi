@@ -1,1 +1,1 @@
-# 1823_DOM
+# Personal notepad project using local storage to storage data
