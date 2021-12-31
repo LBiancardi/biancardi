@@ -40,7 +40,7 @@ export const returnPokemon = async (id) => {
     );
     return pokemon;
   } catch (error) {
-    console.error(error);
+    console.error("Select a pokemon before add to favorites");
   }
 };
 

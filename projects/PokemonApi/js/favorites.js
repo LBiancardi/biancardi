@@ -2,65 +2,55 @@ import { Pokemon } from "./app/models/pokeModel.js";
 
 const pokemonsList = document.querySelector(".pokemonsList");
 
-async function displayFavorites() {
-  try {
-    const res = await fetch(`http://localhost:3000/myFavorites`);
-    if (res.ok) {
-      const pokemons = await res.json();
-      pokemons.forEach((pokemon) => {
-        let newPokemon = document.createElement("div");
-        newPokemon.className = "pokemon";
-        const pokeImg = document.createElement("span");
-        const pokeName = document.createElement("p");
-        pokeName.className = "pokemonName";
-        const pokeID = document.createElement("p");
-        pokeID.className = "pokemonID";
-        const pokeType = document.createElement("p");
-        const removeButton = document.createElement("button");
-        const moreInfo = document.createElement("button");
-        removeButton.id = "removeBtn";
-        removeButton.innerText = "Remove";
-        moreInfo.id = "moreInfoBtn";
-        moreInfo.innerText = "More infos";
+(() => {
+  const pokemons = JSON.parse(localStorage.getItem("pokemons"));
+  pokemons.forEach((pokemon) => {
+    let newPokemon = document.createElement("div");
+    newPokemon.className = "pokemon";
+    newPokemon.id = `${pokemon.id}`;
+    const pokeImg = document.createElement("span");
+    const pokeName = document.createElement("p");
+    pokeName.className = "pokemonName";
+    const pokeID = document.createElement("p");
+    pokeID.className = "pokemonID";
+    const pokeType = document.createElement("p");
+    const removeButton = document.createElement("button");
+    const moreInfo = document.createElement("button");
+    removeButton.id = "removeBtn";
+    removeButton.innerText = "Remove";
+    moreInfo.id = "moreInfoBtn";
+    moreInfo.innerText = "More infos";
 
-        pokeImg.innerHTML = `<img src="${pokemon.img}" alt="${pokemons.name} Front">`;
-        pokeName.innerText = pokemon.name;
-        pokeID.innerText = pokemon.id;
-        pokeType.innerText = pokemon.type;
+    pokeImg.innerHTML = `<img src="${pokemon.img}" alt="${pokemon.name} Front">`;
+    pokeName.innerText = pokemon.name;
+    pokeID.innerText = pokemon.id;
+    pokeType.innerText = pokemon.type;
 
-        newPokemon.appendChild(pokeImg);
-        newPokemon.appendChild(pokeName);
-        newPokemon.appendChild(pokeID);
-        newPokemon.appendChild(pokeType);
-        newPokemon.appendChild(moreInfo);
-        newPokemon.appendChild(removeButton);
+    newPokemon.appendChild(pokeImg);
+    newPokemon.appendChild(pokeName);
+    newPokemon.appendChild(pokeID);
+    newPokemon.appendChild(pokeType);
+    newPokemon.appendChild(moreInfo);
+    newPokemon.appendChild(removeButton);
 
-        pokemonsList.appendChild(newPokemon);
+    pokemonsList.appendChild(newPokemon);
 
-        createBtns(removeButton);
-        createBtns(moreInfo);
-        // console.log(pokemon);
-      });
-    } else {
-      window.location.href = "failed.html";
-    }
-  } catch (err) {
-    console.error(err);
-  }
-}
-displayFavorites();
+    createBtns(removeButton);
+    createBtns(moreInfo);
+  });
+})();
 
 function createBtns(btn) {
   const pokemonInfos = btn.parentElement;
   const pokemonID = pokemonInfos.querySelector(".pokemonID").innerText;
+  const index = findIdx(Number(pokemonID));
   if (btn.id === "moreInfoBtn") {
     btn.addEventListener("click", () => {
-      moreInfo(pokemonID);
+      moreInfo(index);
     });
   } else if (btn.id === "removeBtn") {
     btn.addEventListener("click", () => {
-      // console.log(pokemonID);
-      removeBtn(pokemonID);
+      removeBtn(index);
     });
   }
 }
@@ -89,14 +79,18 @@ async function moreInfo(id) {
   }
 }
 
-const removeBtn = async (id) => {
-  if (id >= 1 || id <= 899) {
-    try {
-      return fetch(`http://localhost:3000/myFavorites/${id}`, {
-        method: "DELETE",
-      });
-    } catch (error) {
-      console.log(error);
+const removeBtn = (index) => {
+  const listOfPokemons = JSON.parse(localStorage.getItem("pokemons"));
+  listOfPokemons.splice(index, 1);
+  localStorage.setItem("pokemons", JSON.stringify(listOfPokemons));
+  location.reload();
+};
+
+function findIdx(id) {
+  const myPokemons = document.querySelectorAll(".pokemon");
+  for (let index = 0; index < myPokemons.length; index++) {
+    if (myPokemons[index].id == id) {
+      return index;
     }
   }
-};
+}

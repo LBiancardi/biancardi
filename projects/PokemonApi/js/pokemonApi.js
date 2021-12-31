@@ -1,7 +1,10 @@
 // POKEMON API
 // https://pokeapi.co/
 
-import { addToFavorites } from "./app/controllers/addToFavorites.js";
+import {
+  addToFavorites,
+  addToLocalStorage,
+} from "./app/controllers/addToFavorites.js";
 import {
   searchPokemon,
   returnPokemon,
@@ -12,6 +15,7 @@ const submitBtnId = document.getElementById("submitBtnId");
 const submitBtnName = document.getElementById("submitBtnName");
 const submitRandom = document.getElementById("submitRandom");
 const addFavorite = document.getElementById("addFavorite");
+const addLocalStorage = document.getElementById("addLocalStorage");
 
 // buttons listeners
 submitBtnName.addEventListener("click", (event) => {
@@ -38,4 +42,11 @@ addFavorite.addEventListener("click", async (event) => {
   const pokeID = document.getElementById("pokeID").innerText;
   const poke = await returnPokemon(pokeID);
   addToFavorites(poke.img, poke.name, poke.id, poke.type);
+});
+
+addLocalStorage.addEventListener("click", async (event) => {
+  event.preventDefault();
+  const pokeID = document.getElementById("pokeID").innerText;
+  const poke = await returnPokemon(pokeID);
+  addToLocalStorage(poke.img, poke.name, poke.id, poke.type);
 });
