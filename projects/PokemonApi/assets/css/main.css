@@ -1,20 +1,9 @@
-.mainHeader {
-  font-weight: bolder;
-  font-size: 30px;
-  padding-bottom: 20px;
-}
-
-.pokedexForm {
-  padding: 10px 5px;
-  border: 2px solid black;
-  margin: 3px 0;
-}
-
 input,
 select {
-  padding: 10px 5px;
-  margin: 10px 0;
   border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px 5px;
+  transition: 0.7s;
 }
 
 .container {
@@ -28,4 +17,41 @@ select {
   font-weight: bold;
   font-size: 2em;
   text-align: center;
+}
+
+.subtTitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: salmon;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: large;
+  margin: 5px;
+  padding: 10px;
+  transition: 0.7s;
+}
+
+.btn:hover {
+  opacity: 75%;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.successMsg {
+  color: green;
+}
+
+.failedMsg {
+  color: red;
+}
+
+#moreInfoBtn {
+  background-color: whitesmoke;
+}
+
+.hide {
+  display: none;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <title>Pokemon</title>
   </head>
   <body>
@@ -16,35 +17,46 @@
       <h2 class="mainHeader" id="header">Consuming Pokemon API</h2>
       <div class="pokedexForm" id="pokedexSearchByName">
         <h3 class="title">Search by Name</h3>
-        <label for="pokeName">Pokemon name: </label><br />
+        <label for="pokeName" class="subtTitle">Pokemon name: </label><br />
         <input
           type="text"
           id="pokeName"
           name="pokeName"
           placeholder="Charizard"
         /><br />
-        <button type="submit" id="submitBtnName">Search by name</button>
+        <button type="submit" id="submitBtnName" class="btn">
+          Search by name
+        </button>
       </div>
       <br /><br /><br />
       <div class="pokedexForm" id="pokedexSearchByID">
         <h3 class="title">Search by ID</h3>
-        <label for="pokeID">Pokemon ID:</label><br />
+        <label for="pokeID" class="subtTitle">Pokemon ID:</label><br />
         <input
           type="number"
           id="pokemonID"
           name="pokemonID"
           placeholder="100"
         /><br />
-        <button type="submit" id="submitBtnId">Search by ID</button>
-        <button type="submit" id="submitRandom">Find random pokemon</button>
+        <button type="submit" id="submitBtnId" class="btn">Search by ID</button>
+        <button type="submit" id="submitRandom" class="btn">
+          Find random pokemon
+        </button>
       </div>
-      <button id="addFavorite" type="submit">Add to my favorites</button>
-      <button id="addLocalStorage" type="submit">Add to local storage</button>
+      <button id="addFavorite" type="submit" class="btn" style="display: none">
+        Add to my favorites
+      </button>
+      <button id="addLocalStorage" type="submit" class="btn">
+        Add to favorites
+      </button>
       <a href="favorites.html"
-        ><button id="displayFavorites">Show my favorites</button>
+        ><button id="displayFavorites" class="btn search">
+          Show my favorites
+        </button>
       </a>
+      <p class="failedMsg hide"></p>
     </main>
 
-    <script type="module" src="js/pokemonApi.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

@@ -16,8 +16,10 @@ const pokemonsList = document.querySelector(".pokemonsList");
     const pokeType = document.createElement("p");
     const removeButton = document.createElement("button");
     const moreInfo = document.createElement("button");
+    removeButton.className = "btn";
     removeButton.id = "removeBtn";
     removeButton.innerText = "Remove";
+    moreInfo.className = "btn";
     moreInfo.id = "moreInfoBtn";
     moreInfo.innerText = "More infos";
 

@@ -46,7 +46,11 @@ addFavorite.addEventListener("click", async (event) => {
 
 addLocalStorage.addEventListener("click", async (event) => {
   event.preventDefault();
-  const pokeID = document.getElementById("pokeID").innerText;
-  const poke = await returnPokemon(pokeID);
-  addToLocalStorage(poke.img, poke.name, poke.id, poke.type);
+  try {
+    const pokeID = document.getElementById("pokeID").innerText;
+    const poke = await returnPokemon(pokeID);
+    addToLocalStorage(poke.img, poke.name, poke.id, poke.type);
+  } catch (error) {
+    console.error("Select a pokemon before add to favorite " + error);
+  }
 });
