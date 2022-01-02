@@ -11,6 +11,26 @@ select {
   margin: 0 auto;
 }
 
+.navBar {
+  display: flex;
+  margin: 15px 0px;
+}
+
+.navBar__item {
+  color: gray;
+  padding: 10px 15px 10px 0;
+  text-transform: lowercase;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navBar__item:hover {
+  color: black;
+  font-size: 1.1em;
+  text-decoration: underline;
+  opacity: 75%;
+}
+
 .title {
   padding: 3px 0;
   margin-bottom: 5px;
@@ -54,4 +74,16 @@ select {
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .container {
+    width: 95%;
+  }
+
+  .pokemon {
+    width: 100%;
+  }
+
 }

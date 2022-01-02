@@ -1,7 +1,7 @@
 import { Pokemon } from "../models/pokeModel.js";
 
 // selectors
-const body = document.querySelector("body");
+const main = document.querySelector("main");
 const div = document.createElement("div");
 const span = document.createElement("span");
 span.id = "addToFavoriteMsg";
@@ -11,6 +11,7 @@ div.classList = "container pokemon";
 let pokeImg = document.createElement("ul");
 let pokemonImg = document.createElement("ul");
 let pokemonName = document.createElement("ul");
+pokemonName.className = "pokemonName"
 let pokemonId = document.createElement("ul");
 pokemonId.id = "pokeID";
 let pokemonTypes = document.createElement("ul");
@@ -21,7 +22,7 @@ div.appendChild(pokemonName);
 div.appendChild(pokemonId);
 div.appendChild(pokemonTypes);
 div.appendChild(span);
-// body.appendChild(div);
+// main.appendChild(div);
 
 export const returnPokemon = async (id) => {
   try {
@@ -52,7 +53,7 @@ export const searchPokemon = async (id) => {
     pokemonId.innerHTML = `${pokemon.id}`;
     pokeImg.innerText = pokemon.img;
     pokemonTypes.innerHTML = pokemon.type;
-    body.appendChild(div);
+    main.appendChild(div);
     removeCustomMsg();
   } catch (err) {
     p.className = "error";

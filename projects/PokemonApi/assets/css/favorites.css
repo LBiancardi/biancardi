@@ -35,3 +35,9 @@ header {
 #moreInfoBtn {
   background-color: whitesmoke;
 }
+
+@media screen and (max-width: 1000px) {
+  .pokemon {
+    width: 95%;
+  }
+}
