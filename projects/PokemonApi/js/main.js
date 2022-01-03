@@ -19,9 +19,13 @@ const addLocalStorage = document.getElementById("addLocalStorage");
 
 // buttons listeners
 submitBtnName.addEventListener("click", (event) => {
-  event.preventDefault();
-  let pokeName = document.getElementById("pokeName").value.toLowerCase();
-  searchPokemon(pokeName);
+  try {
+    event.preventDefault();
+    let pokeName = document.getElementById("pokeName").value.toLowerCase();
+    searchPokemon(pokeName);
+  } catch (error) {
+    displayErrorMsg(error);
+  }
 });
 
 submitBtnId.addEventListener("click", (event) => {
@@ -51,6 +55,13 @@ addLocalStorage.addEventListener("click", async (event) => {
     const poke = await returnPokemon(pokeID);
     addToLocalStorage(poke.img, poke.name, poke.id, poke.type);
   } catch (error) {
-    console.error("Select a pokemon before add to favorite " + error);
+    displayErrorMsg(error, "Find a pokemon before add to favorite.");
   }
 });
+
+export const displayErrorMsg = (err, customErrorMsg) => {
+  console.log("Some error is happening here" + err);
+  const failedMsg = document.querySelector(".failedMsg");
+  failedMsg.classList.remove("hide");
+  failedMsg.innerText = customErrorMsg;
+};

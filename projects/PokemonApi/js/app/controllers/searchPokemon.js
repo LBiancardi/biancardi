@@ -1,4 +1,5 @@
 import { Pokemon } from "../models/pokeModel.js";
+import { displayErrorMsg } from "../../main.js";
 
 // selectors
 const main = document.querySelector("main");
@@ -11,7 +12,7 @@ div.classList = "container pokemon";
 let pokeImg = document.createElement("ul");
 let pokemonImg = document.createElement("ul");
 let pokemonName = document.createElement("ul");
-pokemonName.className = "pokemonName"
+pokemonName.className = "pokemonName";
 let pokemonId = document.createElement("ul");
 pokemonId.id = "pokeID";
 let pokemonTypes = document.createElement("ul");
@@ -41,7 +42,7 @@ export const returnPokemon = async (id) => {
     );
     return pokemon;
   } catch (error) {
-    console.error("Select a Pokemon between 1 and 898");
+    displayErrorMsg(err, "Please select a valid Pokemon.");
   }
 };
 
@@ -56,13 +57,13 @@ export const searchPokemon = async (id) => {
     main.appendChild(div);
     removeCustomMsg();
   } catch (err) {
-    p.className = "error";
-    p.innerText = "Pokemon doesn't exist";
-    console.error("Error searching pokemon.");
+    displayErrorMsg(err, "Please select a valid Pokemon.");
   }
 };
 
 const removeCustomMsg = () => {
   const addToFavoriteMsg = document.getElementById("addToFavoriteMsg");
+  const failedMsg = document.querySelector(".failedMsg");
+  failedMsg.classList.add("hide");
   addToFavoriteMsg.innerText = "";
 };

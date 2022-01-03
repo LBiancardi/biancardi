@@ -5,7 +5,9 @@ select {
   padding: 10px 5px;
   transition: 0.7s;
 }
-
+a {
+  color: black;
+}
 .container {
   width: 980px;
   margin: 0 auto;
@@ -13,6 +15,7 @@ select {
 
 .navBar {
   display: flex;
+  justify-content: center;
   margin: 15px 0px;
 }
 
@@ -76,8 +79,11 @@ select {
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+.active {
+  text-decoration: underline;
+}
 
+@media screen and (max-width: 1000px) {
   .container {
     width: 95%;
   }
@@ -85,5 +91,4 @@ select {
   .pokemon {
     width: 100%;
   }
-
 }

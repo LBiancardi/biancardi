@@ -24,20 +24,18 @@ export const addToFavorites = async (img, name, id, type) => {
 };
 
 export const addToLocalStorage = (img, name, id, type) => {
-  const body = document.querySelector(".pokemon");
-  const addToFavoriteMsg = document.getElementById("addToFavoriteMsg");
   if (name.length > 1) {
     try {
       const pokemons = JSON.parse(localStorage.getItem("pokemons")) || [];
       const newPokemon = { img, name, id, type };
       const pokemonList = [...pokemons, newPokemon];
       localStorage.setItem("pokemons", JSON.stringify(pokemonList));
-      addToFavoriteMsg.className = "successMsg";
-      addToFavoriteMsg.innerText = "Pokemon added to favorite";
+      window.location.href = "succed.html"
     } catch (error) {
+      const body = document.querySelector(".pokemon");
+      const addToFavoriteMsg = document.getElementById("addToFavoriteMsg");
       addToFavoriteMsg.className = "failedMsg";
       addToFavoriteMsg.innerText = "Something went wrong";
-    } finally {
       body.appendChild(addToFavoriteMsg);
     }
   } else {

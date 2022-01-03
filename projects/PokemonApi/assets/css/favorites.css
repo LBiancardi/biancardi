@@ -2,10 +2,26 @@ header {
   margin-bottom: 10px;
 }
 
+.searchBar {
+  text-align: center;
+}
+
+.bar {
+  background: whitesmoke;
+  height: 3rem;
+  width: 50%;
+}
+
+.bar:focus {
+  background: gray;
+  color: white;
+}
+
 .pokemonsList {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 2em;
   /* border: 3px solid red; */
 }
 
