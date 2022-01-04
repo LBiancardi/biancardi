@@ -1,8 +1,11 @@
 .mainActions {
+  align-items: center;
   border: 3px solid var(--custom--black);
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   margin-top: 3rem;
-  padding: 3rem;
+  padding: 3rem;  
   text-align: center;
 }
 
@@ -10,6 +13,28 @@
   margin-bottom: 3rem;
 }
 
+.successMsg {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  margin-bottom: 2rem;
+
+  background-image: url(../img/checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 [data-button="addAgain"] {
   background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 1.785rem;
+  }
+
+  [data-button="addAgain"] {
+    color: var(--custom--black);
+  }
 }

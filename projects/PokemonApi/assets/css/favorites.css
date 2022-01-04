@@ -61,4 +61,8 @@ header {
   .pokemon {
     width: 95%;
   }
+
+  .bar {
+    width: 85%;
+  }
 }

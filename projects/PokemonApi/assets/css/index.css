@@ -31,7 +31,6 @@ input:hover {
   background-size: 200% auto;
   border-radius: 10px;
   color: white;
-  box-shadow: 0 0 20px #eee;
   font-size: 0.985em;
   transition: 0.5s;
 }
@@ -62,6 +61,10 @@ input:hover {
 
 @media screen and (max-width: 1000px) {
   .pokemon ul img {
-    width: 35%;
+    width: 40%;
+  }
+
+  .btn {
+    font-size: 0.80em;
   }
 }
