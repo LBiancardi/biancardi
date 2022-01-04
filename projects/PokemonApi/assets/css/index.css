@@ -5,7 +5,7 @@ input:hover {
 }
 
 .mainTitle {
-  color: gray;
+  color: var(--main--header);
   font-weight: bolder;
   font-size: 30px;
   padding-bottom: 20px;
@@ -17,13 +17,51 @@ input:hover {
   margin: 3px 0;
 }
 
+.btn__actions {
+  margin-bottom: 15px;
+}
+
 .btn {
-  background-color: lightsalmon;
-  margin: 0;
-  font-size: 0.9em;
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
+  background-size: 200% auto;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  font-size: 0.985em;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.pokemon {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.pokemon ul {
+  padding: 0.5rem;
+}
+
+.pokemon ul img {
+  width: 15%;
 }
 
 .pokemon span {
   font-weight: 600;
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .pokemon ul img {
+    width: 35%;
+  }
 }

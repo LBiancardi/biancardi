@@ -1,16 +1,14 @@
 // POKEMON API
 // https://pokeapi.co/
 
-import {
-  addToFavorites,
-  addToLocalStorage,
-} from "./app/controllers/addToFavorites.js";
+import { addToLocalStorage } from "./app/controllers/addToFavorites.js";
 import {
   searchPokemon,
   returnPokemon,
 } from "./app/controllers/searchPokemon.js";
+import { displayErrorMsg } from "./app/helpers/displayErrorMsg.js";
 
-// selectors
+// buttons
 const submitBtnId = document.getElementById("submitBtnId");
 const submitBtnName = document.getElementById("submitBtnName");
 const submitRandom = document.getElementById("submitRandom");
@@ -41,13 +39,6 @@ submitRandom.addEventListener("click", async (event) => {
   searchPokemon(randomId);
 });
 
-addFavorite.addEventListener("click", async (event) => {
-  event.preventDefault();
-  const pokeID = document.getElementById("pokeID").innerText;
-  const poke = await returnPokemon(pokeID);
-  addToFavorites(poke.img, poke.name, poke.id, poke.type);
-});
-
 addLocalStorage.addEventListener("click", async (event) => {
   event.preventDefault();
   try {
@@ -58,10 +49,3 @@ addLocalStorage.addEventListener("click", async (event) => {
     displayErrorMsg(error, "Find a pokemon before add to favorite.");
   }
 });
-
-export const displayErrorMsg = (err, customErrorMsg) => {
-  console.log("Some error is happening here" + err);
-  const failedMsg = document.querySelector(".failedMsg");
-  failedMsg.classList.remove("hide");
-  failedMsg.innerText = customErrorMsg;
-};

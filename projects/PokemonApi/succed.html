@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/success.css" />
     <title>Document</title>
   </head>
   <body class="container">
@@ -29,10 +31,19 @@
       </div>
     </header>
     <main>
-      <h1>Pokemon adicionado com sucesso</h1>
-      <a href="index.html"
-        ><button type="submit">Adicionar novamente</button></a
-      >
+      <div class="mainActions">
+        <h1 class="title">Pokemon added to favorites</h1>
+        <a href="index.html"
+          ><button type="submit" class="btn" data-button="addAgain">
+            Add again
+          </button></a
+        >
+        <a href="favorites.html"
+          ><button type="submit" class="btn" data-button="showFavorites">
+            My favorites
+          </button></a
+        >
+      </div>
     </main>
   </body>
 </html>

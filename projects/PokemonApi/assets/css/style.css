@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,900&display=swap");
+
+:root {
+  /*========== Colors ==========*/
+  --button--color: rgb(253, 230, 230);
+  --custom--black: #111;
+  --custom--white: #fefefe;
+  --gradient--1 : rgba(255, 209, 67, 1);
+  --gradient--2 : rgba(255, 145, 83, 1);
+  --darker--green: #057e63;
+  --main--header: rgb(32, 15, 3);
+  --header--hover: rgba(0, 0, 0, 0.432);
+  --light--green: #86d6c5;
+  --light--yellow: #f1c960;
+  --light--pink: #d4bdcf;
+  --failed--msg: rgb(189, 23, 23);
+  --success--msg: rgb(0, 221, 0);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: var(--body-font);
+}

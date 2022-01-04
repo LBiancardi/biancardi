@@ -1,0 +1,15 @@
+.mainActions {
+  border: 3px solid var(--custom--black);
+  border-radius: 20px;
+  margin-top: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+[data-button="addAgain"] {
+  background-color: white;
+}

@@ -1,3 +1,11 @@
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    var(--gradient--1) 0%,
+    var(--gradient--2) 90%
+  );
+}
+
 input,
 select {
   border-radius: 10px;
@@ -6,7 +14,7 @@ select {
   transition: 0.7s;
 }
 a {
-  color: black;
+  color: var(--custom--black);
 }
 .container {
   width: 980px;
@@ -20,7 +28,9 @@ a {
 }
 
 .navBar__item {
-  color: gray;
+  color: var(--custom--black);
+  font-size: 1.2rem;
+  font-weight: 600;
   padding: 10px 15px 10px 0;
   text-transform: lowercase;
   text-decoration: none;
@@ -28,7 +38,7 @@ a {
 }
 
 .navBar__item:hover {
-  color: black;
+  color: var(--custom--black);
   font-size: 1.1em;
   text-decoration: underline;
   opacity: 75%;
@@ -50,7 +60,7 @@ a {
 .btn {
   background-color: salmon;
   border-radius: 15px;
-  font-weight: 900;
+  font-weight: 700;
   font-size: large;
   margin: 5px;
   padding: 10px;
@@ -64,11 +74,11 @@ a {
 }
 
 .successMsg {
-  color: green;
+  color: var(--success--msg);
 }
 
 .failedMsg {
-  color: red;
+  color: var(--failed--msg);
 }
 
 #moreInfoBtn {

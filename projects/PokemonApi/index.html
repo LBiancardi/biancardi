@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <title>Pokemon API</title>
@@ -12,10 +13,22 @@
   <body class="container">
     <header>
       <div class="navBar">
-        <a href="index.html" class="navBar__item"><ul>home</ul></a>
-        <a href="favorites.html" class="navBar__item"><ul>favorites</ul></a>
-        <a href="../../index.html" class="navBar__item"><ul>portfolio</ul></a>
-      </div>      
+        <a href="index.html" class="navBar__item"
+          ><ul>
+            home
+          </ul></a
+        >
+        <a href="favorites.html" class="navBar__item"
+          ><ul>
+            favorites
+          </ul></a
+        >
+        <a href="../../index.html" class="navBar__item"
+          ><ul>
+            portfolio
+          </ul></a
+        >
+      </div>
     </header>
     <main>
       <h2 class="mainTitle" id="header">Pokemon API</h2>
@@ -40,24 +53,31 @@
           type="number"
           id="pokemonID"
           name="pokemonID"
-          placeholder="100"
+          placeholder="1 - 898"
         /><br />
         <button type="submit" id="submitBtnId" class="btn">Search by ID</button>
         <button type="submit" id="submitRandom" class="btn">
           Find random pokemon
         </button>
       </div>
-      <button id="addFavorite" type="submit" class="btn" style="display: none">
-        Add to my favorites
-      </button>
-      <button id="addLocalStorage" type="submit" class="btn">
-        Add to favorites
-      </button>
-      <a href="favorites.html"
-        ><button id="displayFavorites" class="btn search">
-          Show my favorites
+      <div class="btn__actions">
+        <button
+          id="addFavorite"
+          type="submit"
+          class="btn"
+          style="display: none"
+        >
+          Add to my favorites
         </button>
-      </a>
+        <button id="addLocalStorage" type="submit" class="btn">
+          Add to favorites
+        </button>
+        <a href="favorites.html"
+          ><button id="displayFavorites" class="btn search">
+            My favorites
+          </button>
+        </a>
+      </div>
       <p class="failedMsg hide"></p>
     </main>
 
