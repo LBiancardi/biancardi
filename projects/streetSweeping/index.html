@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <header>
+      <nav class="mainHeader__nav">
+        <a href="index.html">Home</a>
+        <a href="address.html">My Address</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="inputField">
+        <input
+          type="text"
+          class="address"
+          id="address"
+          placeholder="Your address here"
+        />
+        <div class="dateSelector">
+          <div class="dateSelector__weekday">
+            <label for="weekday">Choose a weekday:</label>
+            <select name="weekday" id="weekday__input">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+            </select>
+          </div>
+          <div class="dateSelector__week">
+            <label for="week"
+              >Select the weeks that you have sweeping on your street:</label
+            >
+            <select name="week" id="week__input">
+              <option value="every">Every week</option>
+              <option value="first__third">First and third</option>
+              <option value="second__fourth">Second and fourth</option>
+            </select>
+          </div>
+        </div>
+        <button id="subRequest">Submit request</button>
+      </div>
+    </main>
+    <script>
+      const subRequest = document.getElementById("subRequest");
+
+      subRequest.addEventListener("click", () => {
+        const address = document.getElementById("address").value;
+        const weekday = document.getElementById("weekday__input").value;
+        console.log(address);
+        console.log(weekday);
+      });
+    </script>
+  </body>
+</html>

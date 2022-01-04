@@ -1,0 +1,12 @@
+main {
+  text-align: left;
+}
+
+.mainHeader__nav {
+  margin: 2rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 980px;
+}
