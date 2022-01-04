@@ -9,6 +9,7 @@ export const createPokemon = (img, name, id, type) => {
   let extraInfo = document.createElement("div");
   newPokemon.className = "pokemon";
   newPokemon.id = `${id}`;
+  newPokemon.draggable = true;
   const pokeImg = document.createElement("span");
   const pokeName = document.createElement("p");
   pokeName.className = "pokemonName";
