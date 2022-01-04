@@ -19,7 +19,6 @@ const removeHideClass = (listOfPokemons) => {
 };
 
 const addAndRemoveClass = (pokemon, moreInfo) => {
-  console.log(pokemon.id);
   if (pokemon.id === "hiding") {
     pokemon.classList.remove("hide");
     pokemon.id = "displaying";

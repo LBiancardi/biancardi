@@ -12,7 +12,6 @@ import { displayErrorMsg } from "./app/helpers/displayErrorMsg.js";
 const submitBtnId = document.getElementById("submitBtnId");
 const submitBtnName = document.getElementById("submitBtnName");
 const submitRandom = document.getElementById("submitRandom");
-const addFavorite = document.getElementById("addFavorite");
 const addLocalStorage = document.getElementById("addLocalStorage");
 
 // buttons listeners
