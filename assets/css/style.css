@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -9,25 +9,42 @@
   /*========== Colors ==========*/
   --background: #08070b;
   --primaryColor: #72777c;
-  --secondaryColor: #afafaf;
-  --hoverBackground: rgba(255, 255, 255, 0.13);
+  --secondaryColor: #ebebeb;
+  --hoverBackground: rgba(255, 255, 255, 0.068);
   --hoverText: #fefefe;
 
   /*========== Font and typography ==========*/
   --body-font: "Open Sans", sans-serif;
-  --heading-font: "Paytone One", sans-serif;
+  --headingFont: "Paytone One", sans-serif;
+  --h1FontSize: 2.85rem;
+  --logoSize: 1.4rem;
+  --normal-font-size: 0.938rem;
+  --tiny-font-size: 0.8rem;
 
+  /*========== Style ==========*/
   --duration: 0.4s;
   --borderRadius: 10px;
 }
 
-.container {
-  width: 75%;
-  margin: 0 auto;
+body {
+  background-color: var(--background);
+  color: var(--primaryColor);
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
 }
 
-body {
-  background-color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headingFont);
+  font-size: var(--h1FontSize);
+}
+.container {
+  width: 40%;
+  margin: 0 auto;
 }
 
 .site-header {
@@ -44,9 +61,9 @@ body {
 .btn-header {
   color: var(--primaryColor);
   border-radius: var(--borderRadius);
-  font-size: 0.8rem;
+  font-size: var(--tiny-font-size);
   transition: var(--duration) ease-in-out;
-  margin: 0 0.8rem;
+  margin: 0 1rem;
   padding: 14px;
   text-transform: uppercase;
   height: 34px;
@@ -59,20 +76,24 @@ body {
 }
 
 .btn-logo {
-  color: white;
+  color: var(--hoverText);
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: var(--logoSize);
   height: auto;
-  padding: 3px 10px!important;
+  padding: 3px 10px !important;
   text-decoration: none;
   font-family: var(--headingFont);
 }
 
-.header-logo {
-  width: 2rem;
+.highlight {
+  color: var(--hoverText);
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 97vw;
+  }
+
   .site-header {
     flex-direction: column;
   }
@@ -87,7 +108,7 @@ body {
   }
 
   .btn-logo {
-    padding: 0!important;
+    padding: 0 !important;
   }
 
   .header-logo {
