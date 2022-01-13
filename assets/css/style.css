@@ -143,8 +143,8 @@ h6 {
   /* color: var(--resumeBtn); */
   padding-left: 0.35rem;
   visibility: hidden;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .copyright {

@@ -60,6 +60,11 @@
   font-weight: 900;
 }
 
+.footer__msg,
+.social__media__icon {
+  color: #ff8b1e;
+}
+
 @media screen and (max-width: 768px) {
   .cards {
     align-items: center;
