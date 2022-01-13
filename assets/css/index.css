@@ -40,6 +40,13 @@
   font-weight: 900;
   padding: 0.5rem;
   text-transform: uppercase;
+  transition: var(--duration) ease-in-out;
+}
+
+.download__resume:hover {
+  background-color: var(--resumeBtn);
+  border-color: var(--background);
+  color: var(--background);
 }
 
 .subTitle {
