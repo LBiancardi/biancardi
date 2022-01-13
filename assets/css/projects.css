@@ -1,0 +1,73 @@
+.orange {
+  background-color: #ff8b1e;
+  background-image: linear-gradient(135deg, #ffc085 0%, #a75509 100%);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project__card {
+  background-color: ghostwhite;
+  border-radius: var(--borderRadius);
+  padding: 0.1rem;
+  margin-bottom: 1rem;
+  width: 48%;
+}
+
+.project__card__img {
+  border-radius: var(--borderRadius);
+  width: 100%;
+}
+
+.project__card__body {
+  padding: 0.785rem;
+}
+
+.project__card__title {
+  font-size: 1.5rem;
+  font-family: var(--headingFont);
+  text-transform: capitalize;
+}
+
+.project__card__text {
+  margin-bottom: 0.1rem;
+}
+
+.project__card__btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn {
+  border: #ff8b1e 2px solid;
+  border-radius: var(--borderRadius);
+  color: var(--background);
+  font-size: 85%;
+  transition: var(--duration) linear;
+  text-transform: capitalize;
+  width: 45%;
+}
+
+.btn:hover {
+  border: none;
+  background-color: var(--background);
+  border-radius: 0;
+  color: #ff8b1e;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    align-items: center;
+    margin-top: 1.2rem;
+    flex-direction: column;
+  }
+
+  .project__card {
+    width: 95%;
+  }
+}
