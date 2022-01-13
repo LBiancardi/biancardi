@@ -12,6 +12,7 @@
   --secondaryColor: #ebebeb;
   --hoverBackground: rgba(255, 255, 255, 0.068);
   --hoverText: #fefefe;
+  --resumeBtn: #85ffbd;
 
   /*========== Font and typography ==========*/
   --body-font: "Open Sans", sans-serif;
@@ -87,6 +88,33 @@ h6 {
 
 .highlight {
   color: var(--hoverText);
+  transition: var(--duration) ease-in-out;
+}
+
+.footer__social__media {
+  display: flex;
+  margin: 5rem 0 2rem 0;
+  justify-content: space-between;
+}
+
+.social__media__name {
+  color: var(--primaryColor);
+  padding: 0 0.785rem;
+  transition: var(--duration) ease-in-out;
+}
+
+.social__media__name:hover {
+  color: var(--hoverText);
+  text-decoration: none;
+}
+
+.social__media__icon {
+  color: var(--resumeBtn);
+  padding-left: 0.35rem;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
