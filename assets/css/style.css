@@ -190,10 +190,15 @@ h6 {
     font-size: 0.55rem;
   }
 
+  .footer__social__media {
+    justify-content: space-around;
+  }
+
   .social__media__name {
     font-size: 1px;
     visibility: hidden;
     text-align: center;
+    width: auto;
   }
 
   .social__media__icon {
