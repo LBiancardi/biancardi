@@ -83,6 +83,10 @@ blockquote {
   text-decoration: none;
 }
 
+.footer__msg {
+  color: #85ffbd;
+}
+
 @media screen and (max-width: 768px) {
   .main {
     margin: 0;

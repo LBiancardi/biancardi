@@ -111,8 +111,8 @@ h6 {
   display: flex;
   margin-top: 2rem;
   flex-direction: column;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .footer__txt {
