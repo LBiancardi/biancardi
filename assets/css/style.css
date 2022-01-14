@@ -196,8 +196,8 @@ h6 {
     display: none;
   }
 
-  .copyright {
-    font-size: 0.55rem;
+  .footer__txt {
+    width: 55%;
   }
 
   .footer__social__media {
@@ -214,5 +214,9 @@ h6 {
   .social__media__icon {
     font-size: 1.2rem !important;
     visibility: visible;
+  }
+
+  .copyright {
+    font-size: 0.55rem;
   }
 }
