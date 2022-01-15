@@ -3,6 +3,10 @@
   background-image: linear-gradient(135deg, #ffc085 0%, #a75509 100%);
 }
 
+.project__year {
+  font-size: 1.785rem;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -34,6 +38,12 @@
 
 .project__card__text {
   margin-bottom: 0.1rem;
+}
+
+.in__progress {
+  border-top: var(--primaryColor) 0.25px solid;
+  font-weight: bolder;
+  margin-top: 1rem;
 }
 
 .project__card__btns {
