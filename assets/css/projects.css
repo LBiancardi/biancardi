@@ -1,6 +1,10 @@
-.orange {
+.pageTextGradient {
   background-color: #ff8b1e;
   background-image: linear-gradient(135deg, #ffc085 0%, #a75509 100%);
+}
+
+.pageTextColor {
+  color: #ff8b1e;
 }
 
 .project__year {
@@ -68,11 +72,6 @@
   border-radius: 0;
   color: #ff8b1e;
   font-weight: 900;
-}
-
-.footer__msg,
-.social__media__icon {
-  color: #ff8b1e;
 }
 
 @media screen and (max-width: 768px) {

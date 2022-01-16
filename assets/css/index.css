@@ -2,9 +2,13 @@
   margin: 2rem 0;
 }
 
-.green {
+.pageTextGradient {
   background-color: #85ffbd;
   background-image: linear-gradient(135deg, #85ffbd 0%, #156a3a 100%);
+}
+
+.pageTextColor {
+  color: #85ffbd;
 }
 
 .profile {
@@ -81,11 +85,6 @@ blockquote {
   opacity: 0.8;
   border-bottom-color: var(--secondaryColor);
   text-decoration: none;
-}
-
-.footer__msg,
-.social__media__icon {
-  color: #85ffbd;
 }
 
 @media screen and (max-width: 768px) {
