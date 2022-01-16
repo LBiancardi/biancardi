@@ -1,0 +1,57 @@
+.pageTextGradient {
+  background-color: #4adede;
+  background-image: linear-gradient(135deg, #4adede 0%, #1e2f97 100%);
+}
+
+.pageTextColor {
+  color: #4adede;
+}
+
+.contact__link {
+  color: var(--primaryColor);
+  margin-top: 1rem;
+}
+
+.contact__infos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  justify-content: space-between;
+}
+
+.contact__type {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__type__img {
+  background-color: var(--hoverBackground);
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  padding: 1.3rem 2rem;
+  text-align: center;
+}
+
+.contact__type__txt {
+  color: var(--primaryColor);
+  margin: 1rem 0;
+  transition: var(--duration) ease-in-out;
+}
+
+.contact__type__txt:hover {
+  color: var(--hoverText);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__infos {
+    justify-content: center;
+  }
+
+  .contact__type {
+    margin-top: 1.75rem;
+    width: 90%;
+  }
+}
