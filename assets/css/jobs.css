@@ -6,3 +6,8 @@
 .pageTextColor {
   color: #663399;
 }
+
+.project__card__img {
+  margin: 1rem 25%;
+  width: 50%;
+}
