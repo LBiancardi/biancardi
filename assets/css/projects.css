@@ -38,7 +38,7 @@
   border-radius: var(--borderRadius);
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   margin: 1rem;
-  padding: 10%;
+  padding: 2%;
   max-width: 45%;
 }
 
@@ -103,7 +103,7 @@
 
   .project__card__img {
     margin: 0;
-    padding: 4rem;
+    padding: 1rem;
     max-width: 100%;
   }
 
