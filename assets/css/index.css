@@ -150,6 +150,8 @@ blockquote {
   }
 
   .skill__img {
+    padding: 0.7rem;
+    height: 50%;
     width: 100%;
   }
 }
