@@ -98,11 +98,13 @@
     align-items: center;
     flex-direction: column-reverse;
     min-width: none;
-    width: 95%;
+    width: 100%;
   }
 
   .project__card__img {
-    max-width: 95%;
+    margin: 0;
+    padding: 4rem;
+    max-width: 100%;
   }
 
   .project__card__body {

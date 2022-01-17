@@ -19,6 +19,8 @@
 
 @media screen and (max-width: 768px) {
   .project__card__img {
+    margin: 0;
+    padding: 5rem;
     width: 100%;
   }
 }
