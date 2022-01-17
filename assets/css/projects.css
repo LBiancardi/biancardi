@@ -1,3 +1,7 @@
+.container {
+  min-width: 50%;
+}
+
 .pageTextGradient {
   background-color: #ff8b1e;
   background-image: linear-gradient(135deg, #ffc085 0%, #a75509 100%);
@@ -18,16 +22,21 @@
 }
 
 .project__card {
-  background-color: ghostwhite;
+  background-color: var(--secondaryColor);
   border-radius: var(--borderRadius);
-  padding: 0.1rem;
+  display: flex;
   margin-bottom: 1rem;
-  width: 48%;
+  justify-content: space-between;
+  padding: 0.1rem;
+  width: 100%;
 }
 
 .project__card__img {
+  background-color: white;
   border-radius: var(--borderRadius);
-  width: 100%;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  margin: 0.5rem;
+  width: 45%;
 }
 
 .project__card__body {
@@ -82,6 +91,13 @@
   }
 
   .project__card {
+    align-items: center;
+    flex-direction: column-reverse;
+    min-width: none;
     width: 95%;
+  }
+
+  .project__card__img {
+    width: 70%;
   }
 }
