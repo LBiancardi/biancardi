@@ -80,6 +80,7 @@ blockquote {
 .skill__img {
   border-radius: var(--borderRadius);
   background-color: var(--hoverBackground);
+  height: 100%;
   padding: 1rem;
 }
 

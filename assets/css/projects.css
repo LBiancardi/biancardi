@@ -1,5 +1,5 @@
 .container {
-  min-width: 50%;
+  min-width: 50vw;
 }
 
 .pageTextGradient {
@@ -16,12 +16,14 @@
 }
 
 .cards {
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .project__card {
+  align-items: flex-start;
   background-color: var(--secondaryColor);
   border-radius: var(--borderRadius);
   display: flex;
@@ -35,12 +37,14 @@
   background-color: white;
   border-radius: var(--borderRadius);
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-  margin: 0.5rem;
-  width: 45%;
+  margin: 1rem;
+  padding: 10%;
+  max-width: 45%;
 }
 
 .project__card__body {
   padding: 0.785rem;
+  width: 45%;
 }
 
 .project__card__title {
@@ -99,5 +103,9 @@
 
   .project__card__img {
     width: 70%;
+  }
+
+  .project__card__body {
+    width: 100%;
   }
 }
