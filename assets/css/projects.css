@@ -102,8 +102,7 @@
   }
 
   .project__card__img {
-    height: auto;
-    width: 100%;
+    max-width: 95%;
   }
 
   .project__card__body {
