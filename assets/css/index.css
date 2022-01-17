@@ -65,6 +65,24 @@ blockquote {
   font-style: italic;
 }
 
+.my__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill__img {
+  border-radius: var(--borderRadius);
+  background-color: var(--hoverBackground);
+  padding: 1rem;
+}
+
 .carrer {
   font-size: 1.2rem;
   margin: 1rem 0 0.785rem 0;
@@ -97,6 +115,11 @@ blockquote {
     flex-direction: column;
   }
 
+  .profile__photo {
+    margin-right: 0;
+    width: 80%;
+  }
+
   .download__resume {
     width: 100%;
   }
@@ -116,8 +139,16 @@ blockquote {
     margin-top: 1rem;
   }
 
-  .profile__photo {
-    margin-right: 0;
-    width: 80%;
+  .my__skills {
+    flex-wrap: nowrap;
+  }
+
+  .skills__card {
+    margin: 1rem 0;
+    max-width: 20%;
+  }
+
+  .skill__img {
+    width: 100%;
   }
 }
