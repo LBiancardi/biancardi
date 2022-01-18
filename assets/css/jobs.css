@@ -10,18 +10,3 @@
 .pageTextColor {
   color: #bb98df;
 }
-
-.project__card__img {
-  margin: 1rem;
-  padding: 2rem;
-  width: 35%;
-}
-
-@media screen and (max-width: 768px) {
-  .project__card__img {
-    margin: 0.25rem;
-    padding: 20%;
-    width: 98%;
-    max-width: 100%;
-  }
-}
