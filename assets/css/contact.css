@@ -52,6 +52,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 98vw;
+  }
+
   .contact__infos {
     justify-content: center;
   }
