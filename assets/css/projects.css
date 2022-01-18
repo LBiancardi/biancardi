@@ -102,8 +102,9 @@
   }
 
   .project__card__img {
-    margin: 0;
-    padding: 1rem;
+    margin: 0.25rem;
+    padding: 0;
+    width: 98%;
     max-width: 100%;
   }
 
