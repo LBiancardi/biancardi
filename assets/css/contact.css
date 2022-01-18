@@ -1,3 +1,7 @@
+.container {
+  width: 60%;
+}
+
 .pageTextGradient {
   background-color: #4adede;
   background-image: linear-gradient(135deg, #4adede 0%, #1e2f97 100%);
@@ -16,14 +20,16 @@
   display: flex;
   flex-wrap: wrap;
   margin: 3rem 0;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contact__type {
   align-items: center;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 45%;
 }
 
 .contact__type__img {
