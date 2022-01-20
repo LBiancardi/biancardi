@@ -79,9 +79,26 @@ blockquote {
 
 .skill__img {
   border-radius: var(--borderRadius);
+  border-bottom: 3px solid;
   background-color: var(--hoverBackground);
   height: 100%;
   padding: 1rem;
+}
+
+.js {
+  border-bottom-color: #e9d44d;
+}
+
+.react {
+  border-bottom-color: #66c4ff;
+}
+
+.css {
+  border-bottom-color: #2f6f97;
+}
+
+.html {
+  border-bottom-color: #dd4b25;
 }
 
 .carrer {

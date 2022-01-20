@@ -24,7 +24,7 @@
 
 .project__card {
   align-items: flex-start;
-  background-color: var(--secondaryColor);
+  background-color: var(--hoverBackground);
   border-radius: var(--borderRadius);
   display: flex;
   margin-bottom: 1rem;
@@ -36,7 +36,8 @@
 .project__card__img {
   background-color: white;
   border-radius: var(--borderRadius);
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   margin: 1rem;
   padding: 2%;
   max-width: 45%;
@@ -51,6 +52,38 @@
   font-size: 1.5rem;
   font-family: var(--headingFont);
   text-transform: capitalize;
+}
+
+.project__languages {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+
+.language {
+  border: solid 2.5px;
+  border-radius: var(--borderRadius);
+  color: var(--secondaryColor);
+  padding: 0.3rem 1rem;
+  margin-right: 0.25rem;
+}
+
+.html {
+  background-color: rgba(255, 166, 0, 0.363);
+  border-color: #dd4b25;
+}
+.css {
+  background-color: #3594cf6c;
+  border-color: #2f6f97;
+}
+.js {
+  background-color: #e9d44d6b;
+  border-color: #e9d44d;
+}
+.react {
+  background-color: #66c4ff7e;
+  border-color: #66c4ff;
 }
 
 .project__card__text {
@@ -72,7 +105,7 @@
 .btn {
   border: #ff8b1e 2px solid;
   border-radius: var(--borderRadius);
-  color: var(--background);
+  color: var(--primaryColor);
   font-size: 85%;
   transition: var(--duration) linear;
   text-transform: capitalize;
@@ -106,6 +139,10 @@
     padding: 0;
     width: 98%;
     max-width: 100%;
+  }
+
+  .project__languages {
+    margin: 0rem;
   }
 
   .project__card__body {
