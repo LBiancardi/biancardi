@@ -7,6 +7,7 @@ const pokemonsList = document.querySelector(".pokemonsList");
 export const createPokemon = async (img, name, id, type) => {
   let newPokemon = document.createElement("div");
   let extraInfo = document.createElement("div");
+  let buttons = document.createElement("div");
   newPokemon.className = "pokemon";
   newPokemon.id = `${id}`;
   newPokemon.draggable = true;
@@ -23,10 +24,13 @@ export const createPokemon = async (img, name, id, type) => {
   moreInfo.className = "btn";
   moreInfo.id = "moreInfoBtn";
   moreInfo.innerText = "More info";
+  buttons.classList = "favorite__buttons";
+  buttons.appendChild(moreInfo);
+  buttons.appendChild(removeButton);
 
   pokeImg.innerHTML = `<img src="${img}" alt="${name} Front">`;
-  pokeName.innerText = name;
-  pokeID.innerText = id;
+  pokeName.innerText = `${id}. ${name}`;
+  // pokeID.innerText = id;
 
   extraInfo.classList = ["extraInfo hide"];
   extraInfo.id = "hiding";
@@ -35,12 +39,13 @@ export const createPokemon = async (img, name, id, type) => {
   pokeType.classList = "pokeType";
   extraInfo.appendChild(pokeType);
 
-  newPokemon.appendChild(pokeImg);
   newPokemon.appendChild(pokeName);
+  newPokemon.appendChild(pokeImg);
   newPokemon.appendChild(pokeID);
   newPokemon.appendChild(extraInfo);
-  newPokemon.appendChild(moreInfo);
-  newPokemon.appendChild(removeButton);
+  newPokemon.appendChild(buttons);
+  // newPokemon.appendChild(moreInfo);
+  // newPokemon.appendChild(removeButton);
   const mainType = extraInfo.childNodes[0].innerText.split(" ")[0];
   newPokemon.classList.add(mainType);
 
@@ -52,8 +57,9 @@ export const createPokemon = async (img, name, id, type) => {
 
 function createBtns(btn) {
   const pokemonInfos = btn.parentElement;
-  const pokemonID = pokemonInfos.querySelector(".pokemonID").innerText;
-  const index = findIdx(Number(pokemonID));
+  const pokemonID = Number(pokemonInfos.parentElement.id);
+  const index = findIdx(pokemonID);
+  console.log(index);
   if (btn.id === "moreInfoBtn") {
     btn.addEventListener("click", () => {
       moreInfo(index);

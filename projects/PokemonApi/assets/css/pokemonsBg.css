@@ -3,7 +3,7 @@
 }
 
 .fire {
-  background-color: #fddfdf;
+  background: #fddfdf;
 }
 
 .grass {
@@ -62,4 +62,3 @@
 .normal {
   background-color: #f5f5f5;
 }
-

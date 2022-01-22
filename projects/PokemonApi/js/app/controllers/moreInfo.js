@@ -1,14 +1,15 @@
 export function moreInfo(index) {
   const listOfPokemons = document.querySelectorAll(".extraInfo");
-  const moreInfoBtn = document.querySelectorAll("#moreInfoBtn");
+  const moreInfoBtn = document.querySelectorAll(".favorite__buttons");
   const pokemon = listOfPokemons[index];
-  const moreInfo = moreInfoBtn[index];
+  const moreInfo = moreInfoBtn[index].children[0];
 
   removeHideClass(listOfPokemons);
   addAndRemoveClass(pokemon, moreInfo);
 }
 
 const removeHideClass = (listOfPokemons) => {
+  console.log(listOfPokemons);
   listOfPokemons.forEach((pokemon, idx) => {
     if (pokemon.classList.value === "extraInfo") {
       moreInfoBtn[idx].innerText = "More info";
@@ -19,6 +20,8 @@ const removeHideClass = (listOfPokemons) => {
 };
 
 const addAndRemoveClass = (pokemon, moreInfo) => {
+  console.log(pokemon);
+  console.log(moreInfo.innerText);
   if (pokemon.id === "hiding") {
     pokemon.classList.remove("hide");
     pokemon.id = "displaying";

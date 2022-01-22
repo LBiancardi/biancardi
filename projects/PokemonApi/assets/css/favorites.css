@@ -22,14 +22,16 @@
 .pokemonsList {
   display: flex;
   justify-content: space-evenly;
+  gap: 0.5rem;
   flex-wrap: wrap;
   margin-bottom: 2em;
 }
 
 .pokemon {
   border: 2px solid black;
-  margin: 2px 1px;
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem;
   text-align: center;
   transition: 0.5s;
   width: 28.5%;
@@ -48,12 +50,8 @@
 }
 
 .selectedPokemon {
-  background-image: linear-gradient(135deg, #fab2ff 10%, #1904e5 100%);
-
   border-radius: 10px;
-  border: 2px dashed var(--darker--green);
-  color: var(--custom--white);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   width: 31%;
 }
 

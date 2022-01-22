@@ -1,5 +1,6 @@
 export const removeBtn = (index) => {
   const listOfPokemons = JSON.parse(localStorage.getItem("pokemons"));
+  console.log(index);
   const pokemonId = listOfPokemons[index].id;
   listOfPokemons.splice(index, 1);
   removeFadeOut(document.getElementById(`${pokemonId}`), 1000);

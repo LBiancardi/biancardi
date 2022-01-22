@@ -93,13 +93,9 @@ a {
 
 @media screen and (max-width: 1000px) {
   body {
-    background-size: cover;
+    background-size:contain;
   }
   .container {
     width: 95%;
-  }
-
-  .pokemon {
-    width: 100%;
   }
 }

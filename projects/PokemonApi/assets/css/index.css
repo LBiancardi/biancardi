@@ -61,8 +61,8 @@ input:hover {
 }
 
 @media screen and (max-width: 1000px) {
-  .pokemon ul img {
-    width: 40%;
+  .pokemon {
+    width: 100%;
   }
 
   .btn {
