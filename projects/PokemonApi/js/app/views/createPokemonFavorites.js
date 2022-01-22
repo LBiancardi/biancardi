@@ -4,7 +4,7 @@ import { moreInfo } from "../controllers/moreInfo.js";
 
 const pokemonsList = document.querySelector(".pokemonsList");
 
-export const createPokemon = (img, name, id, type) => {
+export const createPokemon = async (img, name, id, type) => {
   let newPokemon = document.createElement("div");
   let extraInfo = document.createElement("div");
   newPokemon.className = "pokemon";
@@ -41,6 +41,8 @@ export const createPokemon = (img, name, id, type) => {
   newPokemon.appendChild(extraInfo);
   newPokemon.appendChild(moreInfo);
   newPokemon.appendChild(removeButton);
+  const mainType = extraInfo.childNodes[0].innerText.split(" ")[0];
+  newPokemon.classList.add(mainType);
 
   pokemonsList.appendChild(newPokemon);
 

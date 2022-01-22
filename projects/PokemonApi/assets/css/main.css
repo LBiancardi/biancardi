@@ -1,9 +1,10 @@
 body {
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    var(--gradient--1) 0%,
-    var(--gradient--2) 90%
-  );
+  background: #efefbb;
+}
+
+header {
+  background-color: red;
+  color: white;
 }
 
 input,

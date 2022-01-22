@@ -3,15 +3,6 @@ import { displayErrorMsg } from "../helpers/displayErrorMsg.js";
 import { removeCustomMsg } from "../helpers/removeCustomMsg.js";
 import { displayPokemon } from "../views/createPokemonIndex.js";
 
-// if (id <= 9) {
-//   pokemonCorrectedId = `00${id}`;
-// } else {
-//   if (id <= 99) {
-//     pokemonCorrectedId = `0${id}`;
-//   } else {
-//     pokemonCorrectedId = `${id}`;
-//   }
-
 export const returnPokemon = async (id) => {
   let pokemonCorrectedId = 0;
   switch (true) {
