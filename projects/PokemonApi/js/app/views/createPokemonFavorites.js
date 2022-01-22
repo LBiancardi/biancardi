@@ -59,7 +59,6 @@ function createBtns(btn) {
   const pokemonInfos = btn.parentElement;
   const pokemonID = Number(pokemonInfos.parentElement.id);
   const index = findIdx(pokemonID);
-  console.log(index);
   if (btn.id === "moreInfoBtn") {
     btn.addEventListener("click", () => {
       moreInfo(index);
