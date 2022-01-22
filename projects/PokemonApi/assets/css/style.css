@@ -5,8 +5,8 @@
   --button--color: rgb(253, 230, 230);
   --custom--black: #111;
   --custom--white: #fefefe;
-  --gradient--1 : rgba(255, 209, 67, 1);
-  --gradient--2 : rgba(255, 145, 83, 1);
+  --gradient--1: rgba(255, 209, 67, 1);
+  --gradient--2: rgba(255, 145, 83, 1);
   --darker--green: #057e63;
   --main--header: rgb(32, 15, 3);
   --header--hover: rgba(0, 0, 0, 0.432);
@@ -22,4 +22,32 @@
 
 * {
   font-family: var(--body-font);
+}
+
+.main__header {
+  align-items: center;
+  background: var(--failed--msg);
+  border-bottom: black 4px solid;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  height: 7rem;
+}
+
+.mainTitle {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .main__header {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }

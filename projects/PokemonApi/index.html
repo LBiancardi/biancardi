@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/pokemonsBg.css">
-    <title>Pokemon API</title>
-  </head>
-  <body class="container">
-    <header>
-      <div class="navBar">
-        <a href="index.html" class="navBar__item"
-          ><ul>
-            home
-          </ul></a
-        >
-        <a href="favorites.html" class="navBar__item"
-          ><ul>
-            favorites
-          </ul></a
-        >
-        <a href="../../index.html" class="navBar__item"
-          ><ul>
-            portfolio
-          </ul></a
-        >
-      </div>
-    </header>
-    <main>
-      <h2 class="mainTitle" id="header">Pokemon API</h2>
-      <div class="pokedexForm" id="pokedexSearchByName">
-        <h3 class="title">Search by Name</h3>
-        <label for="pokeName" class="subtTitle">Pokemon name: </label><br />
-        <input
-          type="text"
-          id="pokeName"
-          name="pokeName"
-          placeholder="Charizard"
-        /><br />
-        <button type="submit" id="submitBtnName" class="btn">
-          Search by name
-        </button>
-      </div>
-      <br /><br /><br />
-      <div class="pokedexForm" id="pokedexSearchByID">
-        <h3 class="title">Search by ID</h3>
-        <label for="pokeID" class="subtTitle">Pokemon ID:</label><br />
-        <input
-          type="number"
-          id="pokemonID"
-          name="pokemonID"
-          placeholder="1 - 898"
-        /><br />
-        <button type="submit" id="submitBtnId" class="btn">Search by ID</button>
-        <button type="submit" id="submitRandom" class="btn">
-          Find random pokemon
-        </button>
-      </div>
-      <div class="btn__actions">
-        <button
-          id="addFavorite"
-          type="submit"
-          class="btn"
-          style="display: none"
-        >
-          Add to my favorites
-        </button>
-        <button id="addLocalStorage" type="submit" class="btn">
-          Add to favorites
-        </button>
-        <a href="favorites.html"
-          ><button id="displayFavorites" class="btn search">
-            My favorites
-          </button>
-        </a>
-      </div>
-      <p class="failedMsg hide"></p>
-    </main>
 
-    <script type="module" src="js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/pokemonsBg.css">
+  <title>Pokemon API</title>
+</head>
+
+<body>
+  <header class="main__header">
+    <h2 class="mainTitle" id="header">PokeDex</h2>
+    <div class="navBar">
+      <a href="index.html" class="navBar__item">
+        <ul>
+          home
+        </ul>
+      </a>
+      <a href="favorites.html" class="navBar__item">
+        <ul>
+          favorites
+        </ul>
+      </a>
+      <a href="../../index.html" class="navBar__item">
+        <ul>
+          portfolio
+        </ul>
+      </a>
+    </div>
+  </header>
+  <main class="container">
+    <div class="pokedexForm" id="pokedexSearchByName">
+      <h3 class="title">Search by Name</h3>
+      <label for="pokeName" class="subtTitle">Pokemon name: </label><br />
+      <input type="text" id="pokeName" name="pokeName" placeholder="Charizard" /><br />
+      <button type="submit" id="submitBtnName" class="btn">
+        Search by name
+      </button>
+    </div>
+    <br /><br /><br />
+    <div class="pokedexForm" id="pokedexSearchByID">
+      <h3 class="title">Search by ID</h3>
+      <label for="pokeID" class="subtTitle">Pokemon ID:</label><br />
+      <input type="number" id="pokemonID" name="pokemonID" placeholder="1 - 898" /><br />
+      <button type="submit" id="submitBtnId" class="btn">Search by ID</button>
+      <button type="submit" id="submitRandom" class="btn">
+        Find random pokemon
+      </button>
+    </div>
+    <div class="btn__actions">
+      <button id="addFavorite" type="submit" class="btn" style="display: none">
+        Add to my favorites
+      </button>
+      <button id="addLocalStorage" type="submit" class="btn">
+        Add to favorites
+      </button>
+      <a href="favorites.html"><button id="displayFavorites" class="btn search">
+          My favorites
+        </button>
+      </a>
+    </div>
+    <p class="failedMsg hide"></p>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
 </html>

@@ -2,7 +2,6 @@ const main = document.querySelector("main");
 const div = document.createElement("div");
 const span = document.createElement("span");
 span.id = "addToFavoriteMsg";
-div.classList = "container pokemon";
 
 // create elements
 let pokeImg = document.createElement("ul");
@@ -28,5 +27,7 @@ export const displayPokemon = (img, name, id, type) => {
   pokemonId.innerHTML = `${id}`;
   pokeImg.innerText = img;
   pokemonTypes.innerHTML = type;
+
+  div.classList = `pokemon ${type.split(" ")[0]}`;
   main.appendChild(div);
 };

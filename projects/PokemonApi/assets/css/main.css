@@ -1,10 +1,8 @@
 body {
-  background: #efefbb;
-}
-
-header {
-  background-color: red;
-  color: white;
+  background: #c9c9b2;
+  background-image: url("../img/pokeballHeader.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 input,
@@ -29,20 +27,19 @@ a {
 }
 
 .navBar__item {
-  color: var(--custom--black);
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.3rem;
   font-weight: 600;
-  padding: 10px 15px 10px 0;
+  margin-right: 1rem;
   text-transform: lowercase;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .navBar__item:hover {
   color: var(--custom--black);
-  font-size: 1.1em;
   text-decoration: underline;
-  opacity: 75%;
+  opacity: 85%;
 }
 
 .title {
@@ -69,7 +66,7 @@ a {
 }
 
 .btn:hover {
-  opacity: 75%;
+  opacity: 85%;
   border-radius: 0;
   cursor: pointer;
 }
@@ -95,6 +92,9 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    background-size: cover;
+  }
   .container {
     width: 95%;
   }
