@@ -1,11 +1,16 @@
 export function moreInfo(index) {
   const listOfPokemons = document.querySelectorAll(".extraInfo");
-  const moreInfoBtn = document.querySelectorAll(".favorite__buttons");
-  const pokemon = listOfPokemons[index];
-  const moreInfo = moreInfoBtn[index].children[0];
+  const moreInfoBtn = document.querySelectorAll("#moreInfoBtn");
+
+  moreInfoBtn.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      console.log(e.target);
+      console.log(e.target.parentNode.parentNode.children[2]);
+      addAndRemoveClass(e.target.parentNode.parentNode.children[2], e.target);
+    });
+  });
 
   removeHideClass(listOfPokemons);
-  addAndRemoveClass(pokemon, moreInfo);
 }
 
 const removeHideClass = (listOfPokemons) => {

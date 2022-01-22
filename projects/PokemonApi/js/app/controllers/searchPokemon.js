@@ -10,14 +10,18 @@ export const returnPokemon = async (id) => {
     const types = pokemonsInfos.types;
     const currentTypes = document.createElement("span");
     const correctedId = correctId(pokemonsInfos.id);
+
     types.forEach((type) => {
-      currentTypes.innerHTML += `${type.type.name} `;
+      let newType = document.createElement("span");
+      newType.innerHTML = type.type.name;
+      currentTypes.append(newType);
     });
+
     const pokemon = new Pokemon(
       `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${correctedId}.png`,
       pokemonsInfos.name.toUpperCase(),
       pokemonsInfos.id,
-      currentTypes.innerText
+      currentTypes.innerHTML
     );
     return pokemon;
   } catch (error) {

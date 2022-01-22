@@ -14,7 +14,7 @@ export const createPokemon = async (img, name, id, type) => {
   const pokeImg = document.createElement("span");
   const pokeName = document.createElement("p");
   pokeName.className = "pokemonName";
-  const pokeID = document.createElement("p");
+  const pokeID = document.createElement("span");
   pokeID.className = "pokemonID";
   const removeButton = document.createElement("button");
   const moreInfo = document.createElement("button");
@@ -34,19 +34,17 @@ export const createPokemon = async (img, name, id, type) => {
 
   extraInfo.classList = ["extraInfo hide"];
   extraInfo.id = "hiding";
-  const pokeType = document.createElement("p");
+  const pokeType = document.createElement("div");
   pokeType.innerText = type;
   pokeType.classList = "pokeType";
   extraInfo.appendChild(pokeType);
 
   newPokemon.appendChild(pokeName);
   newPokemon.appendChild(pokeImg);
-  newPokemon.appendChild(pokeID);
   newPokemon.appendChild(extraInfo);
   newPokemon.appendChild(buttons);
-  // newPokemon.appendChild(moreInfo);
-  // newPokemon.appendChild(removeButton);
-  const mainType = extraInfo.childNodes[0].innerText.split(" ")[0];
+  console.log(type);
+  const mainType = pokeType.innerText.split(" ")[0];
   newPokemon.classList.add(mainType);
 
   pokemonsList.appendChild(newPokemon);

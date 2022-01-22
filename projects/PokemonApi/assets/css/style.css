@@ -44,6 +44,7 @@
 @media screen and (max-width: 1000px) {
   .main__header {
     flex-direction: column;
+    height: auto;
   }
 
   .mainTitle {

@@ -4,6 +4,7 @@
 
 .searchBar {
   text-align: center;
+  width: 100%;
 }
 
 .bar {
@@ -20,6 +21,7 @@
 }
 
 .pokemonsList {
+  align-items: flex-start;
   display: flex;
   justify-content: space-evenly;
   gap: 0.5rem;
@@ -41,18 +43,23 @@
   width: 40%;
 }
 
-.pokemon p {
-  padding: 5px;
+.pokeType {
+  padding: 0.4rem;
+  font-weight: bold;
 }
 
 #moreInfoBtn {
   background-color: whitesmoke;
 }
 
+.type {
+  display: flex;
+}
+
 .selectedPokemon {
   border-radius: 10px;
-  transition: 0.5s ease-in-out;
-  width: 31%;
+  transition: 1.5s ease-in-out;
+  height: 20rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -60,7 +67,8 @@
     width: 95%;
   }
 
-  .bar {
-    width: 85%;
+  .bar,
+  .searchBar {
+    width: 90%;
   }
 }

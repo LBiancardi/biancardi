@@ -10,7 +10,8 @@ let pokemonName = document.createElement("ul");
 pokemonName.className = "pokemonName";
 let pokemonId = document.createElement("ul");
 pokemonId.id = "pokeID";
-let pokemonTypes = document.createElement("ul");
+let pokemonTypes = document.createElement("div");
+pokemonTypes.classList = "type";
 
 // display the pokemonsInfos info
 div.appendChild(pokemonImg);
@@ -28,6 +29,6 @@ export const displayPokemon = (img, name, id, type) => {
   pokeImg.innerText = img;
   pokemonTypes.innerHTML = type;
 
-  div.classList = `pokemon ${type.split(" ")[0]}`;
+  div.classList = `pokemon ${pokemonTypes.childNodes[0].innerText}`;
   main.appendChild(div);
 };
