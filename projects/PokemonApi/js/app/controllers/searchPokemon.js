@@ -3,7 +3,27 @@ import { displayErrorMsg } from "../helpers/displayErrorMsg.js";
 import { removeCustomMsg } from "../helpers/removeCustomMsg.js";
 import { displayPokemon } from "../views/createPokemonIndex.js";
 
+// if (id <= 9) {
+//   pokemonCorrectedId = `00${id}`;
+// } else {
+//   if (id <= 99) {
+//     pokemonCorrectedId = `0${id}`;
+//   } else {
+//     pokemonCorrectedId = `${id}`;
+//   }
+
 export const returnPokemon = async (id) => {
+  let pokemonCorrectedId = 0;
+  switch (true) {
+    case id <= 9:
+      pokemonCorrectedId = `00${id}`;
+      break;
+    case id <= 99:
+      pokemonCorrectedId = `0${id}`;
+      break;
+    default:
+      pokemonCorrectedId = `${id}`;
+  }
   try {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const pokemonsInfos = await res.json();
@@ -13,7 +33,7 @@ export const returnPokemon = async (id) => {
       currentTypes.innerHTML += `${type.type.name} `;
     });
     const pokemon = new Pokemon(
-      pokemonsInfos.sprites.front_default,
+      `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemonCorrectedId}.png`,
       pokemonsInfos.name.toUpperCase(),
       pokemonsInfos.id,
       currentTypes.innerText
