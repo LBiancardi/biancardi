@@ -4,8 +4,6 @@ export function moreInfo(index) {
 
   moreInfoBtn.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      console.log(e.target);
-      console.log(e.target.parentNode.parentNode.children[2]);
       addAndRemoveClass(e.target.parentNode.parentNode.children[2], e.target);
     });
   });

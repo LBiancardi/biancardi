@@ -47,6 +47,10 @@ input:hover {
   padding: 0.5rem;
 }
 
+#pokeID::before {
+  content: '#';
+}
+
 .pokemon ul img {
   width: 50%;
 }

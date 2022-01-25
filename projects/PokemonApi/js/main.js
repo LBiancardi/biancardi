@@ -42,6 +42,7 @@ addLocalStorage.addEventListener("click", async (event) => {
   event.preventDefault();
   try {
     const pokeID = document.getElementById("pokeID").innerText;
+    console.log(pokeID);
     const poke = await returnPokemon(pokeID);
     addToLocalStorage(poke.img, poke.name, poke.id, poke.arrType);
   } catch (error) {

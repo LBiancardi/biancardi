@@ -27,14 +27,14 @@ export const displayPokemon = (img, name, id, type, arrType) => {
   pokemonName.innerHTML = `${name}`;
   pokemonId.innerHTML = `${id}`;
   pokeImg.innerText = img;
-  arrType.forEach(type => {
+  pokemonTypes.innerHTML = "";
+  arrType.forEach((type) => {
     let newType = document.createElement("span");
     newType.innerHTML = type;
+    newType.classList.add(`${type}--type`)
     pokemonTypes.append(newType);
   });
-  console.log(arrType);
-  console.log(arrType[0]);
 
-  div.classList = `pokemon ${arrType[0]}`;
+  div.classList = `pokemon ${arrType[0]}--bg`;
   main.appendChild(div);
 };

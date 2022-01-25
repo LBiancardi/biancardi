@@ -34,20 +34,20 @@ export const createPokemon = async (img, name, id, type) => {
   extraInfo.classList = ["extraInfo hide"];
   extraInfo.id = "hiding";
   const pokeType = document.createElement("div");
-  type.forEach(typ => {
+  type.forEach((typ) => {
     let newType = document.createElement("span");
     newType.innerHTML = typ;
+    newType.classList.add(`${typ}--type`);
     pokeType.append(newType);
   });
-  pokeType.classList = "pokeType";
+  pokeType.classList = "type";
   extraInfo.appendChild(pokeType);
 
   newPokemon.appendChild(pokeName);
   newPokemon.appendChild(pokeImg);
   newPokemon.appendChild(extraInfo);
   newPokemon.appendChild(buttons);
-  console.log(type);
-  const mainType = type[0];
+  const mainType = `${type[0]}--bg`;
   newPokemon.classList.add(mainType);
 
   pokemonsList.appendChild(newPokemon);
