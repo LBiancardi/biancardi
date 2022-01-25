@@ -5,6 +5,14 @@ body {
   background-position: center;
 }
 
+.pokemon {
+  background-image: url("../img/pokeballHeader.png");
+  background-repeat:no-repeat;
+  background-size: 9rem;
+  background-position-y: -10%;
+  background-position-x: 120%;
+}
+
 input,
 select {
   border-radius: 10px;
