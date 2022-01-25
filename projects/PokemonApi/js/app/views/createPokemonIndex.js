@@ -20,15 +20,21 @@ div.appendChild(pokemonId);
 div.appendChild(pokemonTypes);
 div.appendChild(span);
 
-export const displayPokemon = (img, name, id, type) => {
+export const displayPokemon = (img, name, id, type, arrType) => {
   // selectors
 
   pokemonImg.innerHTML = `<img src="${img}" alt="${name} Front">`;
   pokemonName.innerHTML = `${name}`;
   pokemonId.innerHTML = `${id}`;
   pokeImg.innerText = img;
-  pokemonTypes.innerHTML = type;
+  arrType.forEach(type => {
+    let newType = document.createElement("span");
+    newType.innerHTML = type;
+    pokemonTypes.append(newType);
+  });
+  console.log(arrType);
+  console.log(arrType[0]);
 
-  div.classList = `pokemon ${pokemonTypes.childNodes[0].innerText}`;
+  div.classList = `pokemon ${arrType[0]}`;
   main.appendChild(div);
 };

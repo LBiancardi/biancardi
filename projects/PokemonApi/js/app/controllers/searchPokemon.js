@@ -8,20 +8,21 @@ export const returnPokemon = async (id) => {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     const pokemonsInfos = await res.json();
     const types = pokemonsInfos.types;
+    const arrTypes = [];
     const currentTypes = document.createElement("span");
     const correctedId = correctId(pokemonsInfos.id);
 
     types.forEach((type) => {
-      let newType = document.createElement("span");
-      newType.innerHTML = type.type.name;
-      currentTypes.append(newType);
+      let newType = type.type.name;
+      arrTypes.push(newType);
     });
 
     const pokemon = new Pokemon(
       `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${correctedId}.png`,
       pokemonsInfos.name.toUpperCase(),
       pokemonsInfos.id,
-      currentTypes.innerHTML
+      currentTypes.innerHTML,
+      arrTypes
     );
     return pokemon;
   } catch (error) {
@@ -32,7 +33,7 @@ export const returnPokemon = async (id) => {
 export const searchPokemon = async (id) => {
   try {
     const pokemon = await returnPokemon(id);
-    displayPokemon(pokemon.img, pokemon.name, pokemon.id, pokemon.type);
+    displayPokemon(pokemon.img, pokemon.name, pokemon.id, pokemon.type, pokemon.arrType);
     removeCustomMsg();
   } catch (err) {
     displayErrorMsg(err, "Please select a valid Pokemon.");

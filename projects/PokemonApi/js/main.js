@@ -43,7 +43,7 @@ addLocalStorage.addEventListener("click", async (event) => {
   try {
     const pokeID = document.getElementById("pokeID").innerText;
     const poke = await returnPokemon(pokeID);
-    addToLocalStorage(poke.img, poke.name, poke.id, poke.type);
+    addToLocalStorage(poke.img, poke.name, poke.id, poke.arrType);
   } catch (error) {
     displayErrorMsg(error, "Find a pokemon before add to favorite.");
   }
