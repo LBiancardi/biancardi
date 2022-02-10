@@ -57,6 +57,29 @@
       <div class="container">
         <h1 class="title pageTextGradient">Let's Talk.</h1>
         <p>Ways to contact me.</p>
+              <form class="contact__form"
+        action="https://formsubmit.co/luisfbiancardi@gmail.com"
+        method="POST"
+      >
+      <div class="contact__infos input">
+        <label for="email">Email
+          <input type="email" name="email" placeholder="Email" required />
+        </label>
+        <label for="name">Name
+          <input type="text" name="name" placeholder="Name" required />
+        </label>
+
+      </div>
+        <textarea class="contact__infos message" style="resize: none" placeholder="Message..." required></textarea>
+        <input type="hidden" name="_subject" value="New job offer!!!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://lbiancardi.github.io/biancardi/thankyou.html"
+        />
+        <button class="contact__btn" type="submit">Send</button>
+      </form>
         <div class="contact__infos">
 
           <div class="contact__type">
